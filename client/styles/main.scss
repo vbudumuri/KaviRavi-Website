@@ -1,0 +1,78 @@
+$background: lightblue;
+
+main image {
+  // background-img: ;
+  width: 100%;
+  max-width: 1170px;
+  max-height: 574px;
+}
+li {
+  color: red;
+}
+sm-piece {
+	max-width: 380px;
+	max-height: 240px;
+}
+
+lg-piece {
+	max-width: 380px;
+	max-height: 380px;
+}
+
+/* pieces on-hover
+  overlay: rgba(39,34,59,0.50);
+*/
+
+p {
+  font-family: Quicksand-Regular;  
+  color: #27223B;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h2 {
+  font-family: Quicksand-Bold;
+  font-size: 30px;  /* ems? */
+  color: #27223B;
+}
+
+h3 {
+  font-family: Quicksand-Bold;
+  font-size: 24px; /* ems? */
+  color: #27223B;
+}
+
+/* rollover text on individual pieces */
+h4 {
+  font-family: Quicksand-Bold;
+  font-size: 20px;  /* ems? */
+  color: #FFFFFF;
+}
+
+/* Main Nav */
+nav {
+  font-family: Quicksand-Regular;
+  font-size: 16px;
+  color: #27223B;
+  font-style: uppercase;
+ }
+
+/* All Digital Print Branding */
+sub-nav {
+  font-size: 18px;
+  color: #27223B;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.about {
+
+}
+
+/* ©2017 All Rights Res Copy: */
+copyright {
+  font-family: Quicksand-Regular;
+  font-size: 14px;
+  color: #27223B;
+  line-height: 20px;
+}
