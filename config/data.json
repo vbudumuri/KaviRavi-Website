@@ -2,13 +2,31 @@
   "first": {
     "category": "misc",
     "title": "farts",
-    "height": "380",
     "poster": "farts.jpg"
   },
   "second": {
     "category": "misc",
-    "title": "butt-splsion",
-    "height": "240",
+    "title": "butt-splosion",
+    "poster": "farts.jpg"
+  },
+  "third": {
+    "category": "misc",
+    "title": "hooey",
+    "poster": "farts.jpg"
+  },
+  "fourth": {
+    "category": "misc",
+    "title": "farts",
+    "poster": "farts.jpg"
+  },
+  "fifth": {
+    "category": "misc",
+    "title": "butt-splosion",
+    "poster": "farts.jpg"
+  },
+  "sixth": {
+    "category": "misc",
+    "title": "hooey",
     "poster": "farts.jpg"
   }
 }

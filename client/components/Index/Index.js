@@ -12,7 +12,7 @@ export default class IndexComponent extends Component {
     this.state = {
       menuOpen: false,
       platform: 'mobile',
-      category: 'print',
+      category: 'all',
       filteredContent: []
     }
   }
@@ -60,7 +60,7 @@ export default class IndexComponent extends Component {
           { Object.keys(myData).map((item, idx) => {
               if(myData[item].category === this.state.category || this.state.category === 'all') {
                 return (
-                  <Thumb key={ idx } { ...myData[item] } />
+                  <Thumb key={ idx } counter={ idx+1 } { ...myData[item] } />
                 );
               }
             }) }

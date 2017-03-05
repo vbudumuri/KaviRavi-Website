@@ -9,7 +9,7 @@
 }
 @mixin breakpoint($point) {
   @if $point == large {
-    @media (min-width: 64.375em) { @content; }
+    @media (min-width: 75em) { @content; }
   }
   @else if $point == medium {
     @media (min-width: 48em) { @content; }
@@ -95,7 +95,7 @@ body {
     button {
       position: absolute;
       right: 20px;
-      top: 14px;
+      top: 10px;
       &.is-active {
         .hamburger-inner {
           &:before, &:after {
@@ -117,20 +117,42 @@ body {
 }
 
 .thumb-wrapper {
-  background-color: #d8d8d8;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   text-align: center;
-  h4 {
-    display: none;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  height: 240px;
+  @include breakpoint(medium) { 
+    height: 380px;
   }
-  &:hover {
-    background-color: rgba(39,34,59,0.5);
+  &:nth-child(even) {
+    @include breakpoint(large) { 
+      height: 240px;
+    }
+  }
+  &:nth-child(odd) {
+    @include breakpoint(large) { 
+      height: 380px;
+    }
+  }
+  &:nth-child(5) {
+    @include breakpoint(large) { 
+      margin-top: -140px;
+    }
+  }
+  .thumb-inner {
+    background-color: #d8d8d8;
     h4 {
-      display: block;
-    } 
+      display: none;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &:hover {
+      background-color: rgba(39,34,59,0.5);
+      h4 {
+        display: block;
+      } 
+    }
+    height: 100%;
   }
 }
 

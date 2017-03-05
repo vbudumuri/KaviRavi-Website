@@ -1530,7 +1530,7 @@ export default StyleSheet.create({
   'hero nav-outer button': {
     'position': 'absolute',
     'right': [{ 'unit': 'px', 'value': 20 }],
-    'top': [{ 'unit': 'px', 'value': 14 }],
+    'top': [{ 'unit': 'px', 'value': 10 }],
     '>w48': {
       'display': 'none'
     }
@@ -1542,20 +1542,27 @@ export default StyleSheet.create({
     'backgroundColor': '#fff'
   },
   'thumb-wrapper': {
-    'backgroundColor': '#d8d8d8',
-    'marginBottom': [{ 'unit': 'px', 'value': 20 }],
-    'textAlign': 'center'
+    'marginBottom': [{ 'unit': 'px', 'value': 16 }],
+    'textAlign': 'center',
+    'height': [{ 'unit': 'px', 'value': 240 }],
+    '>w48': {
+      'height': [{ 'unit': 'px', 'value': 380 }]
+    }
   },
-  'thumb-wrapper h4': {
+  'thumb-wrapper thumb-inner': {
+    'backgroundColor': '#d8d8d8',
+    'height': [{ 'unit': '%V', 'value': 1 }]
+  },
+  'thumb-wrapper thumb-inner h4': {
     'display': 'none',
     'position': 'relative',
     'top': [{ 'unit': '%V', 'value': 0.5 }],
     'transform': 'translateY(-50%)'
   },
-  'thumb-wrapper:hover': {
+  'thumb-wrapper thumb-inner:hover': {
     'backgroundColor': 'rgba(39, 34, 59, 0.5)'
   },
-  'thumb-wrapper:hover h4': {
+  'thumb-wrapper thumb-inner:hover h4': {
     'display': 'block'
   },
   'category-nav liner': {
