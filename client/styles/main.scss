@@ -1,4 +1,166 @@
-$background: lightblue;
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+@import "./_flex-grid.scss";
+@import "./hamburgers.css";
+
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model; // Safari <= 5
+     -moz-box-sizing: $box-model; // Firefox <= 19
+          box-sizing: $box-model;
+}
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: 64.375em) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: 48em) { @content; }
+  }
+  @else if $point == small {
+    @media (min-width: 30em)  { @content; }
+  }
+}
+
+$pad: 20px;
+$purple: #27223B;
+
+body {
+  margin: 0;
+}
+.hide {
+  display: none;
+}
+* {
+  @include box-sizing(border-box);
+}
+
+.hero {
+  background-color: #d8d8d8;
+  height: 340px;
+  .logo {
+    height: 40px;
+    position: fixed;
+    top: 20;
+    z-index: 1;
+    left: 20;
+  }
+  .nav-outer {
+    padding-top: 0px;
+    transition: 0.4s all linear;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    padding-top: 75px;
+    color: #fff;
+    &.is-active {
+      background-color: rgba(39,34,59,0.5);
+      @include breakpoint(medium) { 
+        background-color: transparent;
+      }
+    }
+    @include breakpoint(medium) { 
+      background-color: transparent;
+      padding-top: 20px;
+    }
+    div {
+      padding: $pad*1.2;
+      @include breakpoint(medium) { 
+        padding: $pad;
+      }
+      a {
+        font-family: Quicksand;
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        @include breakpoint(medium) {
+          color: #27223B;
+          font-size: 16px;
+        }
+      }
+    }
+    section {
+      height: 0;
+      overflow: hidden;
+      // padding-top: 75px;
+      transition: 0.4s all linear;
+      &.opened {
+        height: 265;
+      }
+      @include breakpoint(medium) {
+        height: inherit;
+        padding-top: inherit;
+      }
+    }
+    button {
+      position: absolute;
+      right: 20px;
+      top: 14px;
+      &.is-active {
+        .hamburger-inner {
+          &:before, &:after {
+            background-color: #fff;
+          }
+        }
+      }
+      @include breakpoint(medium) { 
+        display: none;
+      }
+    }
+  }
+  @include breakpoint(medium) { 
+    height: 600px;
+    .logo {
+      height: 73px;
+    }
+  }
+}
+
+.thumb-wrapper {
+  background-color: #d8d8d8;
+  margin-bottom: 20px;
+  text-align: center;
+  h4 {
+    display: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &:hover {
+    background-color: rgba(39,34,59,0.5);
+    h4 {
+      display: block;
+    } 
+  }
+}
+
+.category-nav {
+  .liner {
+    width: 100%;
+    margin-top: -4px;
+    border-top: 1px solid $purple;
+  }
+  .categoryIndicator {
+    transition: 0.4s all;
+    height: 7px;
+    width: 24px;
+    border-radius: 3px;
+    margin-top: 3px;
+    display: inline-block;
+    visibility: hidden;
+    margin-left: calc(50% - 12px);
+  }
+  div {
+    text-align: center;
+    a {
+      font-family: Quicksand;
+      font-weight: 400;
+      font-size: 18;
+      text-decoration: none;
+      color: $purple;
+    }
+  }
+}
 
 main image {
   // background-img: ;
@@ -8,6 +170,8 @@ main image {
 }
 li {
   color: red;
+  font-family: Quicksand;
+  font-weight: 400;
 }
 sm-piece {
 	max-width: 380px;
@@ -24,34 +188,40 @@ lg-piece {
 */
 
 p {
-  font-family: Quicksand-Regular;  
+  font-family: Quicksand;
+  font-weight: 400;  
   color: #27223B;
   font-size: 14px;
   line-height: 20px;
 }
 
 h2 {
-  font-family: Quicksand-Bold;
+  font-family: Quicksand;
+  font-weight: 700;
   font-size: 30px;  /* ems? */
   color: #27223B;
+  text-align: center;
 }
 
 h3 {
-  font-family: Quicksand-Bold;
+  font-family: Quicksand;
+  font-weight: 700;
   font-size: 24px; /* ems? */
   color: #27223B;
 }
 
 /* rollover text on individual pieces */
 h4 {
-  font-family: Quicksand-Bold;
+  font-family: Quicksand;
+  font-weight: 700;
   font-size: 20px;  /* ems? */
   color: #FFFFFF;
 }
 
 /* Main Nav */
 nav {
-  font-family: Quicksand-Regular;
+  font-family: Quicksand;
+  font-weight: 400;
   font-size: 16px;
   color: #27223B;
   font-style: uppercase;
@@ -71,7 +241,8 @@ sub-nav {
 
 /* ©2017 All Rights Res Copy: */
 copyright {
-  font-family: Quicksand-Regular;
+  font-family: Quicksand;
+  font-weight: 400;
   font-size: 14px;
   color: #27223B;
   line-height: 20px;
