@@ -1,15 +1,18 @@
 {
   "first": {
+    "id": "first",
     "category": "misc",
     "title": "farts",
     "poster": "farts.jpg"
   },
   "second": {
+    "id": "second",
     "category": "misc",
     "title": "butt-splosion",
     "poster": "farts.jpg"
   },
   "third": {
+    "id": "third",
     "category": "misc",
     "title": "hooey",
     "backgroundImage": "2_2017_detail_tbweb_1_anim.jpg",
@@ -27,16 +30,19 @@
     }
   },
   "fourth": {
+    "id": "fourth",
     "category": "design",
     "title": "farts",
     "poster": "farts.jpg"
   },
   "fifth": {
+    "id": "fifth",
     "category": "misc",
     "title": "butt-splosion",
     "poster": "farts.jpg"
   },
   "sixth": {
+    "id": "sixth",
     "category": "misc",
     "title": "hooey",
     "poster": "farts.jpg"

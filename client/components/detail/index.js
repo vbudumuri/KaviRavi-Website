@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Hero from '../hero';
 import Nav from '../nav';
 import myData from '../../../config/data.json';
-import { Link, browserHistory } from 'react-router';
+import { Link } from 'react-router';
 
 export default class Detail extends Component {
   constructor(props, ...args) {
@@ -12,15 +12,19 @@ export default class Detail extends Component {
     this.state = {
       menuOpen: false,
       platform: 'mobile',
-      filteredList: Object.keys(myData).map((item, idx) => {
-        console.log(myData[item].category);
+      filteredList: Object.keys(myData).filter(item => {
         if(myData[item].category === myData[this.props.params.item].category) {
           return myData[item];
         }
-      })
-    }
+      }),
+      currentIndex: 0
+    }  
+  }
 
-     
+  componentWillMount() {
+    this.setState({
+      currentIndex: this.state.filteredList.indexOf(this.props.params.item)
+    });
   }
 
   onOpen(msg) {
@@ -34,12 +38,12 @@ export default class Detail extends Component {
     }
   }
 
-  nextLink(currentItem) {
-    return myData[currentItem]
+  nextLink() {
+    return `/detail/${this.state.filteredList[this.state.currentIndex+1]}`
   }
 
   prevLink() {
-
+    return `/detail/${this.state.filteredList[this.state.currentIndex-1]}`
   }
 
   componentDidMount() {
@@ -108,10 +112,9 @@ export default class Detail extends Component {
           </div>
         </section>
         <section className='detail-footer row'>
-          {console.log(this.state.filteredList)}
-          <div className='col-xs-4'><Link to={this.prevLink(item)}>prev</Link></div>
+          <div className='col-xs-4'><Link to={this.prevLink()}>prev</Link></div>
           <div className='col-xs-4'><Link to='/'>all</Link></div>
-          <div className='col-xs-4'><Link to={this.nextLink(item)}>next</Link></div>
+          <div className='col-xs-4'><Link to={this.nextLink()}>next</Link></div>
         </section>
       </section>
     );
