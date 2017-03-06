@@ -35,6 +35,17 @@ body {
 .hero {
   background-color: #d8d8d8;
   height: 340px;
+  &.detail-hero {
+    height: 80px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    @include breakpoint(medium) { 
+      height: 112px;
+      background-color: #fff;
+    }
+  }
   .logo {
     height: 40px;
     position: fixed;
@@ -86,6 +97,9 @@ body {
       transition: 0.4s all linear;
       &.opened {
         height: 265;
+        @include breakpoint(medium) {
+          height: 100%;
+        }  
       }
       @include breakpoint(medium) {
         height: inherit;
@@ -113,6 +127,23 @@ body {
     .logo {
       height: 73px;
     }
+  }
+}
+
+.top-of-page {
+  margin-top: 80px;
+  @include breakpoint(medium) { 
+    margin-top: 112px;
+  }
+}
+
+.laptop {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 0px;
+  transition: 5s all;
+  &.scrolling {
+    background-position-y: 100%;
   }
 }
 
@@ -238,6 +269,17 @@ h4 {
   font-weight: 700;
   font-size: 20px;  /* ems? */
   color: #FFFFFF;
+  &.breadcrumbs {
+    color: #27223B;
+  }
+}
+
+h5 {
+  font-family: Quicksand;
+  margin: 8 20 8 0;
+  font-weight: 400;
+  font-size: 20px;  /* ems? */
+  color: #27223B;
 }
 
 /* Main Nav */

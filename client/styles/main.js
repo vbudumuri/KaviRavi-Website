@@ -1470,6 +1470,17 @@ export default StyleSheet.create({
       'height': [{ 'unit': 'px', 'value': 600 }]
     }
   },
+  'herodetail-hero': {
+    'height': [{ 'unit': 'px', 'value': 80 }],
+    'top': [{ 'unit': 'px', 'value': 0 }],
+    'left': [{ 'unit': 'px', 'value': 0 }],
+    'position': 'fixed',
+    'width': [{ 'unit': '%H', 'value': 1 }],
+    '>w48': {
+      'height': [{ 'unit': 'px', 'value': 112 }],
+      'backgroundColor': '#fff'
+    }
+  },
   'hero logo': {
     'height': [{ 'unit': 'px', 'value': 40 }],
     'position': 'fixed',
@@ -1525,7 +1536,10 @@ export default StyleSheet.create({
     }
   },
   'hero nav-outer sectionopened': {
-    'height': [{ 'unit': 'px', 'value': 265 }]
+    'height': [{ 'unit': 'px', 'value': 265 }],
+    '>w48': {
+      'height': [{ 'unit': '%V', 'value': 1 }]
+    }
   },
   'hero nav-outer button': {
     'position': 'absolute',
@@ -1540,6 +1554,21 @@ export default StyleSheet.create({
   },
   'hero nav-outer buttonis-active hamburger-inner:after': {
     'backgroundColor': '#fff'
+  },
+  'top-of-page': {
+    'marginTop': [{ 'unit': 'px', 'value': 80 }],
+    '>w48': {
+      'marginTop': [{ 'unit': 'px', 'value': 112 }]
+    }
+  },
+  'laptop': {
+    'backgroundSize': 'cover',
+    'backgroundRepeat': 'no-repeat',
+    'backgroundPositionY': '0px',
+    'transition': '5s all'
+  },
+  'laptopscrolling': {
+    'backgroundPositionY': '100%'
   },
   'thumb-wrapper': {
     'marginBottom': [{ 'unit': 'px', 'value': 16 }],
@@ -1639,6 +1668,17 @@ export default StyleSheet.create({
     'fontSize': [{ 'unit': 'px', 'value': 20 }],
     // ems?
     'color': '#FFFFFF'
+  },
+  'h4breadcrumbs': {
+    'color': '#27223B'
+  },
+  'h5': {
+    'fontFamily': 'Quicksand',
+    'margin': [{ 'unit': 'px', 'value': 8 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 8 }, { 'unit': 'px', 'value': 0 }],
+    'fontWeight': '400',
+    'fontSize': [{ 'unit': 'px', 'value': 20 }],
+    // ems?
+    'color': '#27223B'
   },
   // Main Nav
   'nav': {

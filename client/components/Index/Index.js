@@ -58,9 +58,9 @@ export default class IndexComponent extends Component {
         </section>
         <section className='row'>
           { Object.keys(myData).map((item, idx) => {
-              if(myData[item].category === this.state.category || this.state.category === 'all') {
+              if(~myData[item].category.indexOf(this.state.category) || this.state.category === 'all') {
                 return (
-                  <Thumb key={ idx } counter={ idx+1 } { ...myData[item] } />
+                  <Thumb key={ idx } counter={ idx+1 } { ...myData[item] } detail={ item } />
                 );
               }
             }) }

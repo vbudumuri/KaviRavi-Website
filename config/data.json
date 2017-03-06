@@ -12,10 +12,22 @@
   "third": {
     "category": "misc",
     "title": "hooey",
-    "poster": "farts.jpg"
+    "backgroundImage": "2_2017_detail_tbweb_1_anim.jpg",
+    "images": [
+      "2_2017_detail_tbweb_1.jpg",
+      "2_2017_detail_tbweb_2.jpg",
+      "2_2017_detail_tbweb_3.jpg",
+      "2_2017_detail_tbweb_4.jpg"
+    ],
+    "poster": "farts.jpg",
+    "text": {
+      "body": "qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty",
+      "date": "12/15/2016"
+
+    }
   },
   "fourth": {
-    "category": "misc",
+    "category": "design",
     "title": "farts",
     "poster": "farts.jpg"
   },
