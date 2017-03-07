@@ -1,6 +1,6 @@
 {
-  "name": "react-webpack-boilerplate",
-  "version": "2.0.0",
+  "name": "tiff-cv-site",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "node index",
@@ -11,22 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/srn/react-webpack-boilerplate.git"
+    "url": "https://github.com/burgessa23/tiff-cv-site"
   },
   "license": "UNLISENCED",
   "engines": {
     "node": "5",
     "npm": "3"
   },
-  "keywords": [
-    "react",
-    "webpack",
-    "boilerplate",
-    "production",
-    "sass",
-    "hot",
-    "reload"
-  ],
   "dependencies": {
     "babel-polyfill": "6.3.14",
     "babel-runtime": "6.3.19",
