@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Hero from '../hero';
 import Nav from '../nav';
 import myData from '../../../config/data.json';
-import { Link } from 'react-router';
+import { Link, browserHistory } from 'react-router';
 
 export default class Detail extends Component {
   constructor(props, ...args) {
@@ -22,6 +22,7 @@ export default class Detail extends Component {
   }
 
   componentWillMount() {
+    console.log(`called willMount`);
     this.setState({
       currentIndex: this.state.filteredList.indexOf(this.props.params.item)
     });
@@ -39,11 +40,25 @@ export default class Detail extends Component {
   }
 
   nextLink() {
-    return `/detail/${this.state.filteredList[this.state.currentIndex+1]}`
+    const nextIndex = this.state.currentIndex+1;
+    if(nextIndex <= this.state.filteredList.length) {
+      const nextId = this.state.filteredList[this.state.currentIndex+1];
+      this.setState({
+        currentIndex: nextIndex
+      });
+      browserHistory.push(`/detail/${nextId}`)
+    }    
   }
 
   prevLink() {
-    return `/detail/${this.state.filteredList[this.state.currentIndex-1]}`
+    const prevIndex = this.state.currentIndex-1;
+    if(prevIndex >= 0) {
+      const prevId = this.state.filteredList[this.state.currentIndex-1];
+      this.setState({
+        currentIndex: prevIndex
+      });
+      browserHistory.push(`/detail/${prevId}`)
+    }
   }
 
   componentDidMount() {
@@ -112,9 +127,15 @@ export default class Detail extends Component {
           </div>
         </section>
         <section className='detail-footer row'>
-          <div className='col-xs-4'><Link to={this.prevLink()}>prev</Link></div>
-          <div className='col-xs-4'><Link to='/'>all</Link></div>
-          <div className='col-xs-4'><Link to={this.nextLink()}>next</Link></div>
+          <div className='col-xs-4'>
+            <span onClick={() => this.prevLink()}>prev</span>
+          </div>
+          <div className='col-xs-4'>
+            <Link to='/'>all</Link>
+          </div>
+          <div className='col-xs-4'>
+            <span onClick={() => this.nextLink()}>next</span>
+          </div>
         </section>
       </section>
     );
