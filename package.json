@@ -13,7 +13,7 @@
     "type": "git",
     "url": "https://github.com/burgessa23/tiff-cv-site"
   },
-  "license": "UNLISENCED",
+  "license": "UNLICENSED",
   "engines": {
     "node": "5",
     "npm": "3"
