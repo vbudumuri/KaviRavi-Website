@@ -3,13 +3,23 @@
     "id": "first",
     "category": "misc",
     "title": "farts",
-    "poster": "farts.jpg"
+    "backgroundImage": "",
+    "images": [],
+    "text": {
+      "body": "",
+      "date": ""
+    }
   },
   "second": {
     "id": "second",
     "category": "misc",
     "title": "butt-splosion",
-    "poster": "farts.jpg"
+    "backgroundImage": "",
+    "images": [],
+    "text": {
+      "body": "",
+      "date": ""
+    }
   },
   "third": {
     "id": "third",
@@ -22,29 +32,42 @@
       "2_2017_detail_tbweb_3.jpg",
       "2_2017_detail_tbweb_4.jpg"
     ],
-    "poster": "farts.jpg",
     "text": {
       "body": "qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty qwerty",
       "date": "12/15/2016"
-
     }
   },
   "fourth": {
     "id": "fourth",
     "category": "design",
     "title": "farts",
-    "poster": "farts.jpg"
+    "backgroundImage": "",
+    "images": [],
+    "text": {
+      "body": "",
+      "date": ""
+    }
   },
   "fifth": {
     "id": "fifth",
     "category": "misc",
     "title": "butt-splosion",
-    "poster": "farts.jpg"
+    "backgroundImage": "",
+    "images": [],
+    "text": {
+      "body": "",
+      "date": ""
+    }
   },
   "sixth": {
     "id": "sixth",
     "category": "misc",
     "title": "hooey",
-    "poster": "farts.jpg"
+    "backgroundImage": "",
+    "images": [],
+    "text": {
+      "body": "",
+      "date": ""
+    }
   }
 }
