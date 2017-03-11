@@ -1,9 +1,14 @@
 {
   "first": {
+    "css": {
+      "backgroundSize": "initial",
+      "backgroundPositionX": "50%",
+      "backgroundPositionY": "14%"
+    },
     "id": "first",
     "category": "digital",
     "title": "Tommy Bahama Site Re-Skin",
-    "backgroundImage": "2_2017_detail_tbweb_1_anim.jpg",
+    "backgroundImage": "1_2017_detail_tbweb_1_anim.jpg",
     "images": [
       "1_2017_detail_tbweb_1.jpg",
       "1_2017_detail_tbweb_2.jpg",
@@ -16,6 +21,11 @@
     }
   },
   "second": {
+    "css": {
+      "backgroundSize": "cover",
+      "backgroundPositionX": "50%",
+      "backgroundPositionY": "50%"
+    },
     "id": "second",
     "category": "digital",
     "title": "Tommy Bahama Mobile Re-Skin",
@@ -31,10 +41,15 @@
     }
   },
   "third": {
+    "css": {
+      "backgroundSize": "250%",
+      "backgroundPositionX": "15%",
+      "backgroundPositionY": "9%"
+    },
     "id": "third",
     "category": "digital",
     "title": "Tommy Bahama Emails",
-    "backgroundImage": "2_2017_detail_tbemail_1.jpg",
+    "backgroundImage": "3_2017_detail_tbemail_1.jpg",
     "images": [
       "2_2017_detail_tbemail_1.jpg"
     ],
@@ -44,6 +59,11 @@
     }
   },
   "fourth": {
+    "css": {
+      "backgroundSize": "cover",
+      "backgroundPositionX": "94%",
+      "backgroundPositionY": "50%"
+    },
     "id": "fourth",
     "category": "digital",
     "title": "Fremont Artwalk Website",
@@ -60,6 +80,11 @@
     }
   },
   "fifth": {
+    "css": {
+      "backgroundSize": "initial",
+      "backgroundPositionX": "94%",
+      "backgroundPositionY": "50%"
+    },
     "id": "fifth",
     "category": "digital",
     "title": "Fremont Artwalk Website",
@@ -76,6 +101,11 @@
     }
   },
   "sixth": {
+    "css": {
+      "backgroundSize": "277%",
+      "backgroundPositionX": "86.5%",
+      "backgroundPositionY": "47%"
+    },
     "id": "sixth",
     "category": "print",
     "title": "Apparel Packaging",
@@ -90,6 +120,11 @@
     }
   },
   "seventh": {
+    "css": {
+      "backgroundSize": "213%",
+      "backgroundPositionX": "3%",
+      "backgroundPositionY": "5%"
+    },
     "id": "seventh",
     "category": "misc",
     "title": "Posters",
@@ -103,6 +138,11 @@
     }
   },
   "eighth": {
+    "css": {
+      "backgroundSize": "initial",
+      "backgroundPositionX": "94%",
+      "backgroundPositionY": "50%"
+    },
     "id": "eighth",
     "category": "misc",
     "title": "T-Shirt Graphics",
@@ -111,14 +151,16 @@
       "8_2017_detail_tees_1.jpg"
     ],
     "text": {
-      "body": "<p>FPO COPY T-shirts were a staple business at Zumiez when I was working there. 5-10 tees would be designed on a monthly basis, all of which had to be on trend, timely, and desirable. </p>
-      <p>On top of designing, I also created all of the technical packages that accompanies most apparel design, which includes all the measurements and details the end product should have.</p>
-      <p>I worked directly with domestic and overseas vendors to get the artwork I designed, produced.
-      </p><p>There were also  times when I was asked to art direct third party vendors, whom I would provide trend analysis, </p>",
+      "body": "<p>FPO COPY T-shirts were a staple business at Zumiez when I was working there. 5-10 tees would be designed on a monthly basis, all of which had to be on trend, timely, and desirable. </p><p>On top of designing, I also created all of the technical packages that accompanies most apparel design, which includes all the measurements and details the end product should have.</p><p>I worked directly with domestic and overseas vendors to get the artwork I designed, produced.</p><p>There were also  times when I was asked to art direct third party vendors, whom I would provide trend analysis,</p>",
       "date": "2008-2012"
     }
   },
   "ninth": {
+    "css": {
+      "backgroundSize": "initial",
+      "backgroundPositionX": "86%",
+      "backgroundPositionY": "41%"
+    },
     "id": "ninth",
     "category": "misc",
     "title": "Patterns",
@@ -132,6 +174,11 @@
     }
   },
   "tenth": {
+    "css": {
+      "backgroundSize": "308%",
+      "backgroundPositionX": "15%",
+      "backgroundPositionY": "37%"
+    },
     "id": "tenth",
     "category": "misc",
     "title": "Skateboards",
@@ -148,6 +195,11 @@
     }
   },
   "eleventh": {
+    "css": {
+      "backgroundSize": "initial",
+      "backgroundPositionX": "94%",
+      "backgroundPositionY": "50%"
+    },
     "id": "eleventh",
     "category": "misc",
     "title": "Snowboards",
