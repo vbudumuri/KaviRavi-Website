@@ -102,32 +102,11 @@
   },
   "sixth": {
     "css": {
-      "backgroundSize": "initial",
-      "backgroundPositionX": "94%",
-      "backgroundPositionY": "50%"
-    },
-    "id": "sixth",
-    "category": "digital",
-    "title": "Fremont Artwalk Website",
-    "backgroundImage": "5_2017_detail_fremont_1.jpg",
-    "images": [
-      "5_2017_detail_fremont_1.jpg",
-      "5_2017_detail_fremont_2.jpg",
-      "5_2017_detail_fremont_3.jpg",
-      "5_2017_detail_fremont_4.jpg"
-    ],
-    "text": {
-      "body": "<p>FPO COPY The fun and quirky neighborhood of Fremont in Seattle was in need of a digital portal where the art director and artists could connect for the monthly artwalk. It also needed to be a place where attendees could find information quickly.</p><p>I used illustrations of the neighborhood icons and bright colors to capture the eccentricity of the neighborhood, while utilizing a straightforward and easy to navigate layout to make it easy for both participants and attendees to get the information that they need.</p>",
-      "date": "2012"
-    }
-  },
-  "seventh": {
-    "css": {
       "backgroundSize": "277%",
       "backgroundPositionX": "86.5%",
       "backgroundPositionY": "47%"
     },
-    "id": "seventh",
+    "id": "sixnth",
     "category": "print",
     "title": "Apparel Packaging",
     "backgroundImage": "6_2017_detail_zumzpack_1.jpg",
@@ -140,13 +119,13 @@
       "date": "2010-2012"
     }
   },
-  "eighth": {
+  "seventh": {
     "css": {
       "backgroundSize": "213%",
       "backgroundPositionX": "3%",
       "backgroundPositionY": "5%"
     },
-    "id": "eighth",
+    "id": "seventh",
     "category": "misc",
     "title": "Posters",
     "backgroundImage": "7_2017_detail_gigposters.jpg",
@@ -158,13 +137,13 @@
       "date": "2009-2015"
     }
   },
-  "ninth": {
+  "eighth": {
     "css": {
       "backgroundSize": "initial",
       "backgroundPositionX": "94%",
       "backgroundPositionY": "50%"
     },
-    "id": "ninth",
+    "id": "eighth",
     "category": "misc",
     "title": "T-Shirt Graphics",
     "backgroundImage": "8_2017_detail_tees_1.jpg",
@@ -176,13 +155,13 @@
       "date": "2008-2012"
     }
   },
-  "tenth": {
+  "ninth": {
     "css": {
       "backgroundSize": "initial",
       "backgroundPositionX": "86%",
       "backgroundPositionY": "41%"
     },
-    "id": "tenth",
+    "id": "ninth",
     "category": "misc",
     "title": "Patterns",
     "backgroundImage": "9_2017_detail_patterns_1.jpg",
