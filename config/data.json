@@ -81,105 +81,11 @@
   },
   "fifth": {
     "css": {
-      "backgroundSize": "initial",
-      "backgroundPositionX": "94%",
-      "backgroundPositionY": "50%"
-    },
-    "id": "fifth",
-    "category": "digital",
-    "title": "Fremont Artwalk Website",
-    "backgroundImage": "5_2017_detail_fremont_1.jpg",
-    "images": [
-      "5_2017_detail_fremont_1.jpg",
-      "5_2017_detail_fremont_2.jpg",
-      "5_2017_detail_fremont_3.jpg",
-      "5_2017_detail_fremont_4.jpg"
-    ],
-    "text": {
-      "body": "<p>FPO COPY The fun and quirky neighborhood of Fremont in Seattle was in need of a digital portal where the art director and artists could connect for the monthly artwalk. It also needed to be a place where attendees could find information quickly.</p><p>I used illustrations of the neighborhood icons and bright colors to capture the eccentricity of the neighborhood, while utilizing a straightforward and easy to navigate layout to make it easy for both participants and attendees to get the information that they need.</p>",
-      "date": "2012"
-    }
-  },
-  "sixth": {
-    "css": {
-      "backgroundSize": "277%",
-      "backgroundPositionX": "86.5%",
-      "backgroundPositionY": "47%"
-    },
-    "id": "sixth",
-    "category": "print",
-    "title": "Apparel Packaging",
-    "backgroundImage": "6_2017_detail_zumzpack_1.jpg",
-    "images": [
-      "6_2017_detail_zumzpack_1.jpg",
-      "6_2017_detail_zumzpack_2.jpg"
-    ],
-    "text": {
-      "body": "<p>FPO COPY While working in house for the Zumiez private label team, I got the opportunity to work on a number of different apparel brands. Each brand targeted a different segment of a similar demographic. The brands, which catered to 13-25 year old skateboarders and snowboarders, ran from technical to trendy, with a little bit of everything in between.</p><p>The samples seen here are just a few examples of apparel packaging that I designed while I was there. Most packaging groups usually contained well over 50+ items per group, with 3-4 packaging groups being developed at one time.  I concepted, designed, created production files, tracked, worked with domestic and overseas vendors, to produce samples and made all final approvals that came through.</p>",
-      "date": "2010-2012"
-    }
-  },
-  "seventh": {
-    "css": {
-      "backgroundSize": "213%",
-      "backgroundPositionX": "3%",
-      "backgroundPositionY": "5%"
-    },
-    "id": "seventh",
-    "category": "misc",
-    "title": "Posters",
-    "backgroundImage": "7_2017_detail_gigposters.jpg",
-    "images": [
-      "7_2017_detail_gigposters.jpg"
-    ],
-    "text": {
-      "body": "<p>FPO COPY In my free time, I freelance and volunteer with a number of promoters and organizations to create event promotions. These are a number of posters that I created for a few groups. Most of the posters usually had an accompanying flyer. Sometimes I would be asked to create additional collateral including lapel pins, merch and social media assets.</p>",
-      "date": "2009-2015"
-    }
-  },
-  "eighth": {
-    "css": {
-      "backgroundSize": "initial",
-      "backgroundPositionX": "94%",
-      "backgroundPositionY": "50%"
-    },
-    "id": "eighth",
-    "category": "misc",
-    "title": "T-Shirt Graphics",
-    "backgroundImage": "8_2017_detail_tees_1.jpg",
-    "images": [
-      "8_2017_detail_tees_1.jpg"
-    ],
-    "text": {
-      "body": "<p>FPO COPY T-shirts were a staple business at Zumiez when I was working there. 5-10 tees would be designed on a monthly basis, all of which had to be on trend, timely, and desirable. </p><p>On top of designing, I also created all of the technical packages that accompanies most apparel design, which includes all the measurements and details the end product should have.</p><p>I worked directly with domestic and overseas vendors to get the artwork I designed, produced.</p><p>There were also  times when I was asked to art direct third party vendors, whom I would provide trend analysis,</p>",
-      "date": "2008-2012"
-    }
-  },
-  "ninth": {
-    "css": {
-      "backgroundSize": "initial",
-      "backgroundPositionX": "86%",
-      "backgroundPositionY": "41%"
-    },
-    "id": "ninth",
-    "category": "misc",
-    "title": "Patterns",
-    "backgroundImage": "9_2017_detail_patterns_1.jpg",
-    "images": [
-      "9_2017_detail_patterns_1.jpg"
-    ],
-    "text": {
-      "body": "<p>FPO COPY Working on the private label team at Zumiez allowed me to develop some a lot of new skills. One of the skills that I learned was all over fabric printing. My patterns adorned everything from apparel to backpacks, wallets, belts, the list goes on. I was able to utilize various types of techniques including sublimation, discharge printing, silk-screen, as well as large scale engineered prints.</p>",
-      "date": "2008-2012"
-    }
-  },
-  "tenth": {
-    "css": {
       "backgroundSize": "308%",
       "backgroundPositionX": "15%",
       "backgroundPositionY": "37%"
     },
-    "id": "tenth",
+    "id": "fifth",
     "category": "misc",
     "title": "Skateboards",
     "backgroundImage": "10_2017_detail_skate_1.jpg",
@@ -194,22 +100,97 @@
       "date": "2012"
     }
   },
-  "eleventh": {
+  "sixth": {
     "css": {
       "backgroundSize": "initial",
       "backgroundPositionX": "94%",
       "backgroundPositionY": "50%"
     },
-    "id": "eleventh",
-    "category": "misc",
-    "title": "Snowboards",
-    "backgroundImage": "11_2017_detail_snow_1.jpg",
+    "id": "sixth",
+    "category": "digital",
+    "title": "Fremont Artwalk Website",
+    "backgroundImage": "5_2017_detail_fremont_1.jpg",
     "images": [
-      "11_2017_detail_snow_1.jpg",
-      "11_2017_detail_snow_2.jpg"
+      "5_2017_detail_fremont_1.jpg",
+      "5_2017_detail_fremont_2.jpg",
+      "5_2017_detail_fremont_3.jpg",
+      "5_2017_detail_fremont_4.jpg"
     ],
     "text": {
-      "body": "<p>FPO COPY Zumiez has been producing private label boards for a number of years and I got the opportunity to design the graphics on a number of them while I worked there. Alibi is the first brand that I got to work on. Aperture was introduced later as a more technical brand. </p>",
+      "body": "<p>FPO COPY The fun and quirky neighborhood of Fremont in Seattle was in need of a digital portal where the art director and artists could connect for the monthly artwalk. It also needed to be a place where attendees could find information quickly.</p><p>I used illustrations of the neighborhood icons and bright colors to capture the eccentricity of the neighborhood, while utilizing a straightforward and easy to navigate layout to make it easy for both participants and attendees to get the information that they need.</p>",
+      "date": "2012"
+    }
+  },
+  "seventh": {
+    "css": {
+      "backgroundSize": "277%",
+      "backgroundPositionX": "86.5%",
+      "backgroundPositionY": "47%"
+    },
+    "id": "seventh",
+    "category": "print",
+    "title": "Apparel Packaging",
+    "backgroundImage": "6_2017_detail_zumzpack_1.jpg",
+    "images": [
+      "6_2017_detail_zumzpack_1.jpg",
+      "6_2017_detail_zumzpack_2.jpg"
+    ],
+    "text": {
+      "body": "<p>FPO COPY While working in house for the Zumiez private label team, I got the opportunity to work on a number of different apparel brands. Each brand targeted a different segment of a similar demographic. The brands, which catered to 13-25 year old skateboarders and snowboarders, ran from technical to trendy, with a little bit of everything in between.</p><p>The samples seen here are just a few examples of apparel packaging that I designed while I was there. Most packaging groups usually contained well over 50+ items per group, with 3-4 packaging groups being developed at one time.  I concepted, designed, created production files, tracked, worked with domestic and overseas vendors, to produce samples and made all final approvals that came through.</p>",
+      "date": "2010-2012"
+    }
+  },
+  "eighth": {
+    "css": {
+      "backgroundSize": "213%",
+      "backgroundPositionX": "3%",
+      "backgroundPositionY": "5%"
+    },
+    "id": "eighth",
+    "category": "misc",
+    "title": "Posters",
+    "backgroundImage": "7_2017_detail_gigposters.jpg",
+    "images": [
+      "7_2017_detail_gigposters.jpg"
+    ],
+    "text": {
+      "body": "<p>FPO COPY In my free time, I freelance and volunteer with a number of promoters and organizations to create event promotions. These are a number of posters that I created for a few groups. Most of the posters usually had an accompanying flyer. Sometimes I would be asked to create additional collateral including lapel pins, merch and social media assets.</p>",
+      "date": "2009-2015"
+    }
+  },
+  "ninth": {
+    "css": {
+      "backgroundSize": "initial",
+      "backgroundPositionX": "94%",
+      "backgroundPositionY": "50%"
+    },
+    "id": "ninth",
+    "category": "misc",
+    "title": "T-Shirt Graphics",
+    "backgroundImage": "8_2017_detail_tees_1.jpg",
+    "images": [
+      "8_2017_detail_tees_1.jpg"
+    ],
+    "text": {
+      "body": "<p>FPO COPY T-shirts were a staple business at Zumiez when I was working there. 5-10 tees would be designed on a monthly basis, all of which had to be on trend, timely, and desirable. </p><p>On top of designing, I also created all of the technical packages that accompanies most apparel design, which includes all the measurements and details the end product should have.</p><p>I worked directly with domestic and overseas vendors to get the artwork I designed, produced.</p><p>There were also  times when I was asked to art direct third party vendors, whom I would provide trend analysis,</p>",
+      "date": "2008-2012"
+    }
+  },
+  "tenth": {
+    "css": {
+      "backgroundSize": "initial",
+      "backgroundPositionX": "86%",
+      "backgroundPositionY": "41%"
+    },
+    "id": "tenth",
+    "category": "misc",
+    "title": "Patterns",
+    "backgroundImage": "9_2017_detail_patterns_1.jpg",
+    "images": [
+      "9_2017_detail_patterns_1.jpg"
+    ],
+    "text": {
+      "body": "<p>FPO COPY Working on the private label team at Zumiez allowed me to develop some a lot of new skills. One of the skills that I learned was all over fabric printing. My patterns adorned everything from apparel to backpacks, wallets, belts, the list goes on. I was able to utilize various types of techniques including sublimation, discharge printing, silk-screen, as well as large scale engineered prints.</p>",
       "date": "2008-2012"
     }
   }
