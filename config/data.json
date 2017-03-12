@@ -81,11 +81,32 @@
   },
   "fifth": {
     "css": {
+      "backgroundSize": "308%",
+      "backgroundPositionX": "15%",
+      "backgroundPositionY": "37%"
+    },
+    "id": "fifth",
+    "category": "misc",
+    "title": "Skateboards",
+    "backgroundImage": "4_2017_detail_skate_1.jpg",
+    "images": [
+      "4_2017_detail_skate_1.jpg",
+      "4_2017_detail_skate_2.jpg",
+      "4_2017_detail_skate_3.jpg",
+      "4_2017_detail_skate_4.jpg"
+    ],
+    "text": {
+      "body": "<p>FPO COPY During my last year or so at Zumiez, the private label team was asked to design and produce price-point conscience private label longboard line. </p><p>I worked with buying team to come up with the the board shapes and construction. Once we finalized the technical aspects with the manufacturer, we customized wheels and trucks as well as worked on creating various designs to go on the bottom sides of the boards. </p>",
+      "date": "2012"
+    }
+  },
+  "sixth": {
+    "css": {
       "backgroundSize": "initial",
       "backgroundPositionX": "94%",
       "backgroundPositionY": "50%"
     },
-    "id": "fifth",
+    "id": "sixth",
     "category": "digital",
     "title": "Fremont Artwalk Website",
     "backgroundImage": "5_2017_detail_fremont_1.jpg",
@@ -100,13 +121,13 @@
       "date": "2012"
     }
   },
-  "sixth": {
+  "seventh": {
     "css": {
       "backgroundSize": "277%",
       "backgroundPositionX": "86.5%",
       "backgroundPositionY": "47%"
     },
-    "id": "sixth",
+    "id": "seventh",
     "category": "print",
     "title": "Apparel Packaging",
     "backgroundImage": "6_2017_detail_zumzpack_1.jpg",
@@ -119,13 +140,13 @@
       "date": "2010-2012"
     }
   },
-  "seventh": {
+  "eighth": {
     "css": {
       "backgroundSize": "213%",
       "backgroundPositionX": "3%",
       "backgroundPositionY": "5%"
     },
-    "id": "seventh",
+    "id": "eighth",
     "category": "misc",
     "title": "Posters",
     "backgroundImage": "7_2017_detail_gigposters.jpg",
@@ -137,13 +158,13 @@
       "date": "2009-2015"
     }
   },
-  "eighth": {
+  "ninth": {
     "css": {
       "backgroundSize": "initial",
       "backgroundPositionX": "94%",
       "backgroundPositionY": "50%"
     },
-    "id": "eighth",
+    "id": "ninth",
     "category": "misc",
     "title": "T-Shirt Graphics",
     "backgroundImage": "8_2017_detail_tees_1.jpg",
@@ -155,13 +176,13 @@
       "date": "2008-2012"
     }
   },
-  "ninth": {
+  "tenth": {
     "css": {
       "backgroundSize": "initial",
       "backgroundPositionX": "86%",
       "backgroundPositionY": "41%"
     },
-    "id": "ninth",
+    "id": "tenth",
     "category": "misc",
     "title": "Patterns",
     "backgroundImage": "9_2017_detail_patterns_1.jpg",
@@ -170,46 +191,6 @@
     ],
     "text": {
       "body": "<p>FPO COPY Working on the private label team at Zumiez allowed me to develop some a lot of new skills. One of the skills that I learned was all over fabric printing. My patterns adorned everything from apparel to backpacks, wallets, belts, the list goes on. I was able to utilize various types of techniques including sublimation, discharge printing, silk-screen, as well as large scale engineered prints.</p>",
-      "date": "2008-2012"
-    }
-  },
-  "tenth": {
-    "css": {
-      "backgroundSize": "308%",
-      "backgroundPositionX": "15%",
-      "backgroundPositionY": "37%"
-    },
-    "id": "tenth",
-    "category": "misc",
-    "title": "Skateboards",
-    "backgroundImage": "10_2017_detail_skate_1.jpg",
-    "images": [
-      "10_2017_detail_skate_1.jpg",
-      "10_2017_detail_skate_2.jpg",
-      "10_2017_detail_skate_3.jpg",
-      "10_2017_detail_skate_4.jpg"
-    ],
-    "text": {
-      "body": "<p>FPO COPY During my last year or so at Zumiez, the private label team was asked to design and produce price-point conscience private label longboard line. </p><p>I worked with buying team to come up with the the board shapes and construction. Once we finalized the technical aspects with the manufacturer, we customized wheels and trucks as well as worked on creating various designs to go on the bottom sides of the boards. </p>",
-      "date": "2012"
-    }
-  },
-  "eleventh": {
-    "css": {
-      "backgroundSize": "initial",
-      "backgroundPositionX": "94%",
-      "backgroundPositionY": "50%"
-    },
-    "id": "eleventh",
-    "category": "misc",
-    "title": "Snowboards",
-    "backgroundImage": "11_2017_detail_snow_1.jpg",
-    "images": [
-      "11_2017_detail_snow_1.jpg",
-      "11_2017_detail_snow_2.jpg"
-    ],
-    "text": {
-      "body": "<p>FPO COPY Zumiez has been producing private label boards for a number of years and I got the opportunity to design the graphics on a number of them while I worked there. Alibi is the first brand that I got to work on. Aperture was introduced later as a more technical brand. </p>",
       "date": "2008-2012"
     }
   }
