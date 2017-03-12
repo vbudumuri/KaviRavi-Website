@@ -50,6 +50,10 @@ export default class Detail extends Component {
     }    
   }
 
+  setBodyCopy(copy) {
+    return {__html: copy};
+  }
+
   prevLink() {
     const prevIndex = this.state.currentIndex-1;
     if(prevIndex >= 0) {
@@ -113,7 +117,7 @@ export default class Detail extends Component {
           </div>
           <div className="col-xs-12 col-sm-5">
             <h3 style={{ marginTop: 0 }}>{myData[item].title}</h3>
-            <p>{ myData[item].text.body }</p>
+            <p dangerouslySetInnerHTML={ this.setBodyCopy(myData[item].text.body) } ></p>
             <h5>
               Category:
             </h5>
@@ -128,13 +132,14 @@ export default class Detail extends Component {
         </section>
         <section className='detail-footer row'>
           <div className='col-xs-4'>
-            <span onClick={() => this.prevLink()}>prev</span>
+            
+            <span className='prev' onClick={() => this.prevLink()}>prev</span>
           </div>
           <div className='col-xs-4'>
             <Link to='/'>all</Link>
           </div>
           <div className='col-xs-4'>
-            <span onClick={() => this.nextLink()}>next</span>
+            <span className='next' onClick={() => this.nextLink()}>next</span>
           </div>
         </section>
       </section>
