@@ -1,5 +1,6 @@
 {
   "first": {
+    "hasLaptop": "true",
     "css": {
       "backgroundSize": "initial",
       "backgroundPositionX": "50%",
@@ -51,7 +52,7 @@
     "title": "Tommy Bahama Emails",
     "backgroundImage": "3_2017_detail_tbemail_1.jpg",
     "images": [
-      "2_2017_detail_tbemail_1.jpg"
+      "3_2017_detail_tbemail_1.jpg"
     ],
     "text": {
       "body": "<p>FPO COPY Tommy Bahama sends out over 400 emails a year, and that isn’t including the geo-targeted ones. I have done my fair share of them.</p><p>They range from simple templated emails to quick-turn custom messaging that was “due yesterday”, even though you received the brief an hour ago.</p> ",
@@ -59,9 +60,10 @@
     }
   },
   "fourth": {
+    "hasLaptop": "true",
     "css": {
       "backgroundSize": "cover",
-      "backgroundPositionX": "94%",
+      "backgroundPositionX": "50%",
       "backgroundPositionY": "50%"
     },
     "id": "fourth",
@@ -69,7 +71,6 @@
     "title": "Fremont Artwalk Website",
     "backgroundImage": "5_2017_detail_fremont_1.jpg",
     "images": [
-      "5_2017_detail_fremont_1.jpg",
       "5_2017_detail_fremont_2.jpg",
       "5_2017_detail_fremont_3.jpg",
       "5_2017_detail_fremont_4.jpg"
@@ -175,8 +176,8 @@
   },
   "tenth": {
     "css": {
-      "backgroundSize": "initial",
-      "backgroundPositionX": "86%",
+      "backgroundSize": "cover",
+      "backgroundPositionX": "37%",
       "backgroundPositionY": "41%"
     },
     "id": "tenth",
@@ -197,16 +198,16 @@
   },
   "eleventh": {
     "css": {
-      "backgroundSize": "initial",
-      "backgroundPositionX": "86%",
+      "backgroundSize": "cover",
+      "backgroundPositionX": "47%",
       "backgroundPositionY": "41%"
     },
     "id": "eleventh",
     "category": "print",
     "title": "4th of July Soirée",
-    "backgroundImage": "2017_detail_4thofjuly_2.jpg",
+    "backgroundImage": "2017_detail_4thofjuly_1.jpg",
     "images": [
-      "2017_detail_4thofjuly_2.jpg",
+      "2017_detail_4thofjuly_1.jpg",
       "2017_detail_4thofjuly_2.jpg"
     ],
     "text": {

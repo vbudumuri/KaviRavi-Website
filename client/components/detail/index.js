@@ -4,6 +4,7 @@ import Hero from '../hero';
 import Nav from '../nav';
 import myData from '../../../config/data.json';
 import { Link, browserHistory } from 'react-router';
+import ScrollToTop from 'react-scroll-up';
 
 export default class Detail extends Component {
   constructor(props, ...args) {
@@ -66,8 +67,10 @@ export default class Detail extends Component {
   }
 
   componentDidMount() {
-    const node = ReactDOM.findDOMNode(this.laptopRef);
-    setTimeout(() => {node.classList.toggle('scrolling')}, 3000);
+    if(myData[this.props.params.item].hasLaptop) {
+      const node = ReactDOM.findDOMNode(this.laptopRef);
+      setTimeout(() => {node.classList.toggle('scrolling')}, 3000);
+    }
   }
 
   renderLogo() {
@@ -81,10 +84,13 @@ export default class Detail extends Component {
   }
 
   render() {
-      const item = this.props.params.item;
+    const item = this.props.params.item;
 
     return(
       <section>
+        <ScrollToTop showUnder={ 500 }>
+          <span className='entypo-up-open-big' style={{ fontSize: 32, marginRight: 10 }}></span>
+        </ScrollToTop>
         <Hero className='detail-hero'>
           <img src={`../client/images/${this.renderLogo()}.svg`} className='logo' />
           <Nav isOpen={ this.state.menuOpen } onOpen={ this.onOpen.bind(this) }/>
@@ -92,19 +98,19 @@ export default class Detail extends Component {
         <section className='row top-of-page' style={{marginLeft: 20}}>
           <div>
             <h4 className='breadcrumbs'>
-              <Link to='/' style={{color: '#FFB7C9', textDecoration: 'none'}}>Portfolio / {myData[item].category}</Link> / {item}
+              <Link to='/' style={{color: '#FFB7C9', textDecoration: 'none'}}>Portfolio</Link> / <Link to='/' style={{color: '#FFB7C9', textDecoration: 'none', textTransform: 'capitalize'}}>{myData[item].category}</Link> / {myData[item].title}
             </h4>
           </div>
         </section>
         <section className='row'>
           <div className="col-xs-12 col-sm-7">
-            <div
+            { myData[item].hasLaptop && <div
               ref={ (r) => { this.laptopRef = r } }
               className='laptop'
               style={{ marginBottom: 10, backgroundImage: `url('../client/images/${myData[item].backgroundImage}')` }}
               >
               <img src={`../client/images/2017_detail_laptop.png`} style={{maxWidth: '100%'}} />
-            </div>
+            </div> }
               {
                 myData[item].images.map((image, idx) => {
                   return (
@@ -121,25 +127,26 @@ export default class Detail extends Component {
             <h5>
               Category:
             </h5>
-            <h5>{myData[item].category}</h5>
+            <h6 style={{ textTransform: 'capitalize' }}>{myData[item].category}</h6>
             <h5>
               Date:
             </h5>
-            <h5>
+            <h6>
               { myData[item].text.date }
-            </h5>
+            </h6>
           </div>
         </section>
         <section className='detail-footer row'>
+          <div className='col-xs-4' style={{ display: 'inline-block' }}>
+            <span className='entypo-left-open-big' style={{ fontSize: 32, marginRight: 10 }}></span>
+            <span className='prev' onClick={() => this.prevLink()} style={{ marginTop: 4, verticalAlign: 'super' }}>prev</span>
+          </div>
           <div className='col-xs-4'>
             
-            <span className='prev' onClick={() => this.prevLink()}>prev</span>
           </div>
-          <div className='col-xs-4'>
-            <Link to='/'>all</Link>
-          </div>
-          <div className='col-xs-4'>
-            <span className='next' onClick={() => this.nextLink()}>next</span>
+          <div className='col-xs-4' style={{ display: 'inline-block' }}>
+            <span className='next' onClick={() => this.nextLink()} style={{ marginTop: 4, verticalAlign: 'super' }}>next</span>
+            <span className='entypo-right-open-big' style={{ fontSize: 32, marginLeft: 10 }}></span>
           </div>
         </section>
       </section>

@@ -3,6 +3,14 @@
 @import "./_flex-grid.scss";
 @import "./hamburgers.css";
 
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  color: #FFB7C9;
+}
+
 @mixin box-sizing($box-model) {
   -webkit-box-sizing: $box-model; // Safari <= 5
      -moz-box-sizing: $box-model; // Firefox <= 19
@@ -23,8 +31,23 @@
 $pad: 20px;
 $purple: #27223B;
 
+.container {
+  margin: 0 auto 0;
+  max-width: 100%;
+  @include breakpoint(small) { 
+     max-width: 90%;
+  }
+  // @include breakpoint(medium) { 
+  //    max-width: 90%;
+  // }
+  @include breakpoint(large) { 
+    max-width: 1220px;
+  }
+}
+
 body {
   margin: 0;
+  scroll-behavior: smooth;
 }
 .hide {
   display: none;
@@ -33,8 +56,16 @@ body {
   @include box-sizing(border-box);
 }
 
+.entypo-up-open-big {
+  background-color: #FFB7C9;
+  padding: 4px 8px;
+  &:before {
+    color: #fff;
+  }
+}
+
 .hero {
-  background-color: #d8d8d8;
+  background-color: #fff;
   height: 340px;
   &.detail-hero {
     height: 80px;
@@ -140,6 +171,7 @@ body {
 
 .detail-footer {
   text-align: center;
+  margin-bottom: 50px;
   div {
     a, span {
       font-family: Quicksand;
@@ -165,22 +197,22 @@ body {
   margin-bottom: 16px;
   text-align: center;
   height: 240px;
-  @include breakpoint(medium) { 
+  @include breakpoint(small) { 
     height: 380px;
   }
   &:nth-child(even) {
     @include breakpoint(large) { 
-      height: 240px;
+      // height: 240px;
     }
   }
   &:nth-child(odd) {
     @include breakpoint(large) { 
-      height: 380px;
+      // height: 380px;
     }
   }
   &:nth-child(5) {
     @include breakpoint(large) { 
-      margin-top: -140px;
+      // margin-top: -140px;
     }
   }
   .thumb-inner {
@@ -240,17 +272,30 @@ body {
   }
 }
 
+.bottom-section {
+  background-color: rgba(185,161,211,.37);
+  padding: 30px 50px;
+  color: $purple;
+}
+
 main image {
   // background-img: ;
   width: 100%;
   max-width: 1170px;
   max-height: 574px;
 }
-li {
-  color: red;
-  font-family: Quicksand;
-  font-weight: 400;
+
+ul {
+  list-style-type: none;
+  -webkit-padding-start: 0;
+  li {
+    color: $purple;
+    font-family: Quicksand;
+    font-weight: 400;
+    margin-bottom: 4px;
+  }
 }
+
 sm-piece {
 	max-width: 380px;
 	max-height: 240px;
@@ -269,7 +314,7 @@ p {
   font-family: Quicksand;
   font-weight: 400;  
   color: #27223B;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
 }
 
@@ -302,9 +347,20 @@ h4 {
 h5 {
   font-family: Quicksand;
   margin: 8 20 8 0;
+  font-weight: 700;
+  font-size: 20px;  /* ems? */
+  color: #27223B;
+}
+
+h6 {
+  font-family: Quicksand;
+  margin: 8 20 8 0;
   font-weight: 400;
   font-size: 20px;  /* ems? */
   color: #27223B;
+  &.big {
+    font-size: 24px;
+  }
 }
 
 /* Main Nav */
@@ -324,11 +380,41 @@ sub-nav {
   line-height: 20px;
 }
 
-.about {
-
+input, textarea {
+  border-radius: 4px;
+  height: 50px;
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 8px;
 }
 
-/* ©2017 All Rights Res Copy: */
+textarea {
+  height: 150px;
+  border-width: 2px;
+  border-style: inset;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $purple;
+  font-family: Quicksand;
+  font-size: 14px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $purple;
+  font-family: Quicksand;
+  font-size: 14px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $purple;
+  font-family: Quicksand;
+  font-size: 14px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $purple;
+  font-family: Quicksand;
+  font-size: 14px;
+}
+
 copyright {
   font-family: Quicksand;
   font-weight: 400;
