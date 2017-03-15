@@ -44,6 +44,7 @@ export default class IndexComponent extends Component {
     }
   }
 
+
   render() {
     return (
       <div>
@@ -78,9 +79,10 @@ export default class IndexComponent extends Component {
                 <p>
                   My current focus is on creating functional and aesthetically beautiful digital experiences.
                 </p>
-                <p>
-                  
-                </p>
+                <div>
+                  <p>Wanna get ahold of me?</p>
+                  <a href={"mailto:info@tiffanysmithdesign.com?subject=Request for contact"} style={{display: 'inline-block', marginTop: 10, fontSize: 16, padding: ' 14px 20px', borderRadius: 3, border: 'none', color: '#fff', backgroundColor: '#FFB7C9', fontFamily: 'Quicksand', textDecoration: 'none'}}>Email me</a>
+                </div>
               </div>
               <div className='col-xs-12 col-sm-6 col-lg-4'>
                 <h3>Pixel-Pushing</h3>
@@ -106,25 +108,6 @@ export default class IndexComponent extends Component {
                     <li>Working with stakeholders to achieve business goals.</li>
                   </ul>
               </div>
-            </div>
-          </section>
-        </div>
-        <div className='bottom-section' id='contact' style={{ backgroundColor: '#fff' }}>
-          <section className='container'>
-            <div className='row'>
-              <div className='col-xs-12 col-sm-6'>
-                <h3>Contact</h3>
-                <form method='post' action='https://formspree.io/info@tiffanysmithdesign.com'>
-                  <input name='name' type='text' placeholder='Name' />
-                  <input name='_replyto' type='text' placeholder='Email Address' />
-                  <input type="hidden" name="_next" value="//site.io/thanks.html" />
-                  <input type="hidden" name="_subject" value="Request for info" />
-                  <textarea name='comments' placeholder='Question? Comments? (Optional)' />
-                  <br/>
-                  <button style={{display: 'inline-block', marginTop: 10, fontSize: 16, padding: ' 14px 20px', borderRadius: 3, border: 'none', color: '#fff', backgroundColor: '#FFB7C9', fontFamily: 'Quicksand', textDecoration: 'none'}}>Email me</button>
-                </form>
-              </div>
-              
             </div>
           </section>
         </div>

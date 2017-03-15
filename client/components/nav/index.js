@@ -36,7 +36,7 @@ export default class Nav extends Component {
             <Link to="/#about">About</Link>
           </div> 
           <div className='col-xs-12 col-sm-4'>
-            <Link to="/#contact">Contact</Link>
+            <a href={"mailto:info@tiffanysmithdesign.com?subject=Request for contact"}>Contact</a>
           </div> 
         </section>
       </div>
