@@ -4,7 +4,7 @@ import {browserHistory} from 'react-router';
 export default class Thumb extends Component {
   
   navigateToRoute(detail) {
-    browserHistory.push(`/detail/${detail}`)
+    browserHistory.push(`/detail/${this.props.navCategory}/${detail}`)
   }
 
   render() {

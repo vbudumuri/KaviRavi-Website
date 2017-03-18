@@ -37,6 +37,6 @@ render((
     <Route path="/">
       <IndexRoute component={Index} />
     </Route>
-    <Route path="/detail/:item" component={Detail}/>
+    <Route path="/detail/:category/:item" component={Detail}/>
   </Router>
 ), document.getElementById('js-main'));
