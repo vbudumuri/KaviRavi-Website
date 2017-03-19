@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router'
+import { Link, browserHistory } from 'react-router'
+const scrollIntoView = require('scroll-into-view');
 
 export default class Nav extends Component {
   constructor(props, ...args) {
@@ -16,6 +17,7 @@ export default class Nav extends Component {
     }
   }
 
+
   render() {
     const isOpen = this.props.isOpen ? 'is-active' : null;
     
@@ -31,10 +33,10 @@ export default class Nav extends Component {
             <Link to="/">Portfolio</Link>
           </div> 
           <div className='col-xs-12 col-sm-4'>
-            <Link to="/about">About</Link>
+            <Link to="/#about">About</Link>
           </div> 
           <div className='col-xs-12 col-sm-4'>
-            <Link to="/contact">Contact</Link>
+            <a href={"mailto:info@tiffanysmithdesign.com?subject=Request for contact"}>Contact</a>
           </div> 
         </section>
       </div>
