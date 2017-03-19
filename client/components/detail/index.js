@@ -110,7 +110,7 @@ export default class Detail extends Component {
         <section className='row top-of-page' style={{marginLeft: 20}}>
           <div>
             <h4 className='breadcrumbs'>
-              <Link to='/' style={{color: '#FFB7C9', textDecoration: 'none'}}>Portfolio</Link> / <a onClick={ () => this.setCategory(myData[item].category) } style={{color: '#FFB7C9', textDecoration: 'none', textTransform: 'capitalize'}}>{myData[item].category}</a> / {myData[item].title}
+              <Link to='/' style={{color: '#FFB7C9', textDecoration: 'none'}}>Portfolio</Link> / <a onClick={ () => this.setCategory(myData[item].category) } style={{color: '#FFB7C9', textDecoration: 'none', textTransform: 'capitalize', cursor: 'pointer'}}>{myData[item].category}</a> / {myData[item].title}
             </h4>
           </div>
         </section>
