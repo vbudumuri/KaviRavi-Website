@@ -16,6 +16,11 @@ export default class IndexComponent extends Component {
       filteredContent: []
     }
   }
+  componentWillMount() {
+    if(this.props.location.query.category) {
+      this.filterContent(this.props.location.query.category);
+    }
+  }
 
   filterContent(category) {
     this.setState({
