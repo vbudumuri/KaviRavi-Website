@@ -31,6 +31,10 @@
 $pad: 20px;
 $purple: #27223B;
 
+.hidden {
+  display: none;
+}
+
 .container {
   margin: 0 auto 0;
   max-width: 100%;
@@ -47,7 +51,6 @@ $purple: #27223B;
 
 body {
   margin: 0;
-  scroll-behavior: smooth;
 }
 .hide {
   display: none;
@@ -197,6 +200,7 @@ body {
   margin-bottom: 16px;
   text-align: center;
   height: 240px;
+  opacity: 1;
   @include breakpoint(small) { 
     height: 380px;
   }
@@ -216,7 +220,6 @@ body {
     }
   }
   .thumb-inner {
-    background-color: #d8d8d8;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -250,17 +253,7 @@ body {
     margin-top: -4px;
     border-top: 1px solid $purple;
   }
-  .categoryIndicator {
-    transition: 0.4s all;
-    height: 7px;
-    width: 24px;
-    border-radius: 3px;
-    margin-top: 3px;
-    display: inline-block;
-    visibility: hidden;
-    margin-left: calc(50% - 12px);
-  }
-  div {
+  div.categoryNavItem {
     text-align: center;
     a {
       font-family: Quicksand;
@@ -269,7 +262,63 @@ body {
       text-decoration: none;
       color: $purple;
     }
+    .categoryIndicator {
+      transition: 0.2s all;
+      height: 7px;
+      width: 14px;
+      border-radius: 3px;
+      margin-top: 3px;
+      display: inline-block;
+      visibility: hidden;
+      margin-left: calc(50% - 7px);
+    }
+    &:hover {
+      .categoryIndicator {
+        visibility: visible!important;
+        width: 40px;
+        margin-left: calc(50% - 20px);
+        &#digital {
+          width: 80px;
+          margin-left: calc(50% - 40px);
+        }
+        &#print {
+          width: 70px;
+          margin-left: calc(50% - 35px);
+        }
+        &#misc {
+          width: 60px;
+          margin-left: calc(50% - 30px);
+        }
+      }
+    }
   }
+}
+
+.thumbs-enter {
+  opacity: 0.01;
+}
+
+.thumbs-enter.thumbs-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.thumbs-leave {
+  opacity: 1;
+}
+
+.thumbs-leave.thumbs-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.thumbs-appear {
+  opacity: 0.01;
+}
+
+.thumbs-appear.thumbs-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
 }
 
 .bottom-section {
@@ -286,7 +335,7 @@ main image {
 }
 
 ul {
-  list-style-type: none;
+  // list-style-type: none;
   -webkit-padding-start: 0;
   li {
     color: $purple;

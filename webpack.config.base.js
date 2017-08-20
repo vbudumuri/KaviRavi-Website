@@ -36,7 +36,8 @@ module.exports = {
       'node_modules',
       'client'
     ],
-    extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx']
+    extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx'],
+    alias: { 'react/lib/ReactMount': 'react-dom/lib/ReactMount' }
   },
 
   plugins: [
