@@ -5,7 +5,7 @@ import CategoryNav from '../categoryNav';
 import Thumb from '../thumb';
 import myData from '../../../config/data.json';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-
+import { Link } from 'react-router';
 
 export default class IndexComponent extends Component {
   constructor(props, ...args) {
@@ -65,7 +65,9 @@ export default class IndexComponent extends Component {
       <div>
         <section style={{ marginBottom: 120 }}>
           <Hero className='detail-hero'>
-            <img src={`client/images/${this.renderLogo()}.svg`} className='logo' />
+            <Link to='/'>
+              <img src={`client/images/${this.renderLogo()}.svg`} className='logo' />
+            </Link>
             <Nav isOpen={ this.state.menuOpen } onOpen={ this.onOpen.bind(this) }/>
           </Hero>
         </section>

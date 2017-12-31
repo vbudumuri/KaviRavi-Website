@@ -1,4 +1,58 @@
 {
+  "leafage": {
+    "css": {
+      "backgroundSize": "260%",
+      "backgroundPositionX": "44%",
+      "backgroundPositionY": "27%"
+    },
+    "id": "leafage",
+    "category": "digital",
+    "title": "Leafage: Regional Plant Identifier",
+    "backgroundImage": "plant_id_01.jpg",
+    "images": [
+      "plant_id_01.jpg",
+      "plant_id_02.jpg",
+      "plant_id_03.jpg",
+      "plant_id_04.jpg",
+      "plant_id_05.jpg",
+      "plant_id_06.jpg",
+      "plant_id_07.jpg",
+      "2017_detail_mobile1_08.gif"
+    ],
+    "captions": [
+      "",
+      "",
+      ""
+    ],
+    "text": {
+      "body": "<p>After looking online for a comprehensive, regional plant identifying app, I thought I could take some of the information from a number of resources and integrate them into a easy to use experience. I looked closely at how one would go about identifying a regional plant and went through the a user flow that could be fun, yet comprehensive. There are other functionalities that are in the works, such as sharing and personalized lists.</p><p>Logo design, user flow, icon design, and UI were all designed by myself.</p>",
+      "date": "2017"
+    }
+  },
+  "tbCake": {
+    "css": {
+      "backgroundSize": "259%",
+      "backgroundPositionX": "82%",
+      "backgroundPositionY": "74%"
+    },
+    "id": "tbCake",
+    "category": "digital",
+    "title": "Tommy Bahama Pina Colada cake",
+    "backgroundImage": "tb_cake_01.jpg",
+    "images": [
+      "tb_cake_01.jpg",
+      "tb_cake_02.jpg"
+    ],
+    "captions": [
+      "",
+      "",
+      ""
+    ],
+    "text": {
+      "body": "<p>For the holiday season, Tommy Bahama worked closely with Sweet Lady Jane Cakes to provide their popular Pi&ntilde;a Colada cake for purchase online. I was asked with creating a landing page and other digital collateral, that would both explain a bit of the history of the cake, as well as be a portal to Sweet Lady Jane's site. With limited time and resources, I assisted in art directing the photoshoot for the images that would be used on the site and various other advertising applications.</p>",
+      "date": "2017"
+    }
+  },
   "tbindex": {
     "css": {
       "backgroundSize": "260%",
@@ -21,7 +75,7 @@
       ""
     ],
     "text": {
-      "body": "<p>Tommy Bahama’s marketing team loves content dense index pages. I produced a number of different layouts that were stylized based on season. The following are a collection of some of the different index pages I helped create.</p>",
+      "body": "<p>Tommy Bahama's marketing team loves content dense index pages. I produced a number of different layouts that were stylized based on season. The following are a collection of some of the different index pages I helped create.</p>",
       "date": "2013-2017"
     }
   },
@@ -45,7 +99,7 @@
       ""
     ],
     "text": {
-      "body": "<p>Tommy Bahama’s mobile site was in need of a major facelift. Myself and another designer were tasked with redesigning the entire site.</p><p>With limited usability testing, we used well researched best-practices and heuristics to building out the 1.0 version of the mobile site. Shown are a few of the sketches and high-fidelity mocks.</p><p>The hope is that the mobile site will be used as a jumping off point to try and improve the interaction capabilities of the main site.</p>",
+      "body": "<p>Tommy Bahama's mobile site was in need of a major facelift. Myself and another designer were tasked with redesigning the entire site.</p><p>With limited usability testing, we used well researched best-practices and heuristics to building out the 1.0 version of the mobile site. Shown are a few of the sketches and high-fidelity mocks.</p><p>The hope is that the mobile site will be used as a jumping off point to try and improve the interaction capabilities of the main site.</p>",
       "date": "2017"
     }
   },
@@ -119,7 +173,7 @@
       ""
     ],
     "text": {
-      "body": "<p>The Swim Finder is a visual search function to help assist customers in finding the perfect swimsuit.</p><p>Designed with desktop, iPad and an 32” in-store touch display in mind, due to backend limitations, I had to make sure that a single non-responsive design worked across all these platforms.</p>",
+      "body": "<p>The Swim Finder is a visual search function to help assist customers in finding the perfect swimsuit.</p><p>Designed with desktop, iPad and an 32 inch in-store touch display in mind, due to backend limitations, I had to make sure that a single non-responsive design worked across all these platforms.</p>",
       "date": "2017"
     }
   },
@@ -191,7 +245,7 @@
       "Map of the event"
     ],
     "text": {
-      "body": "<p>Seattle’s fun and quirky Fremont neighborhood needed a digital portal where the Artwalk director and artists could digitally connect to plan monthly artwalks. It also needed to be a place where attendees could quickly find information.</p><p>I used illustrations of neighborhood icons and bright colors to capture the eccentricity of the neighborhood, while utilizing straightforward and easy navigation to make it simple for both participants and attendees to get the information they needed.</p><p>Development help provided by Andrew Burgess</p>",
+      "body": "<p>Seattle's fun and quirky Fremont neighborhood needed a digital portal where the Artwalk director and artists could digitally connect to plan monthly artwalks. It also needed to be a place where attendees could quickly find information.</p><p>I used illustrations of neighborhood icons and bright colors to capture the eccentricity of the neighborhood, while utilizing straightforward and easy navigation to make it simple for both participants and attendees to get the information they needed.</p><p>Development help provided by Andrew Burgess</p>",
       "date": "2012"
     }
   },

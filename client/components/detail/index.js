@@ -6,6 +6,7 @@ import myData from '../../../config/data.json';
 import { Link, browserHistory } from 'react-router';
 import ScrollToTop from 'react-scroll-up';
 import Parser from 'html-react-parser';
+import { StickyContainer, Sticky } from 'react-sticky';
 
 export default class Detail extends Component {
   constructor(props, ...args) {
@@ -117,6 +118,7 @@ export default class Detail extends Component {
 
   render() {
     const item = this.props.params.item;
+    const _marg = item === 'leafage' ? 0 : 30;
 
     return(
       <section>
@@ -132,7 +134,9 @@ export default class Detail extends Component {
           <span className='entypo-up-open-big' style={{ fontSize: 32, marginRight: 10 }}></span>
         </ScrollToTop>
         <Hero className='detail-hero'>
-          <img src={`../../client/images/${this.renderLogo()}.svg`} className='logo' />
+          <Link to='/'>
+            <img src={`../../client/images/${this.renderLogo()}.svg`} className='logo' />
+          </Link>
           <Nav isOpen={ this.state.menuOpen } onOpen={ this.onOpen.bind(this) }/>
         </Hero>
         <section className='row top-of-page' style={{marginLeft: 20}}>
@@ -155,9 +159,11 @@ export default class Detail extends Component {
               {
                 myData[item].images.map((image, idx) => {
                   return (
-                    <div key={idx} style={{marginBottom: 30}}>
+                    <div key={idx} style={{marginBottom: _marg}}>
                       <img src={`../../client/images/${image}`} style={{maxWidth: '100%'}}/>
-                      <p>{ myData[item].captions[idx] }</p>
+                      {
+                        myData[item].captions[idx] && <p>{ myData[item].captions[idx] }</p>
+                      }
                     </div>
                   );
                 })
