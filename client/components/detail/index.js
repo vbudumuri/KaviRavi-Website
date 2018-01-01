@@ -5,6 +5,8 @@ import Nav from '../nav';
 import myData from '../../../config/data.json';
 import { Link, browserHistory } from 'react-router';
 import ScrollToTop from 'react-scroll-up';
+import Parser from 'html-react-parser';
+import { StickyContainer, Sticky } from 'react-sticky';
 
 export default class Detail extends Component {
   constructor(props, ...args) {
@@ -20,7 +22,6 @@ export default class Detail extends Component {
         }),
         currentIndex: 0
       }
-      
   }
 
   componentWillMount() {
@@ -40,6 +41,22 @@ export default class Detail extends Component {
     }
   }
 
+  renderNextLink() {
+    if(this.state.currentIndex+1 >= this.state.filteredList.length) {
+      return(
+        <div className='col-xs-4' style={{ display: 'inline-block' }}>
+          <span></span>
+        </div>
+      );
+    }
+    return(
+      <div className='col-xs-4' style={{ display: 'inline-block' }}>
+        <span className='next' ref={(next) => { this.nextLinkRef = next; }} onClick={() => this.nextLink()} style={{ marginTop: 4, verticalAlign: 'super' }}>next</span>
+        <span className='entypo-right-open-big' ref={(next) => { this.nextLinkArrow = next; }} style={{ fontSize: 32, marginLeft: 10 }}></span>
+      </div>
+    );
+  }
+
   nextLink() {
     const nextIndex = this.state.currentIndex+1;
     if(nextIndex < this.state.filteredList.length) {
@@ -48,11 +65,23 @@ export default class Detail extends Component {
         currentIndex: nextIndex
       });
       browserHistory.push(`/detail/${this.props.params.category}/${nextId}`)
-    }    
+    }
   }
 
-  setBodyCopy(copy) {
-    return {__html: copy};
+  renderPrevLink() {
+    if(this.state.currentIndex === 0) {
+      return(
+        <div className='col-xs-4' style={{ display: 'inline-block' }}>
+          <span></span>
+        </div>
+      );
+    }
+    return(
+      <div className='col-xs-4' style={{ display: 'inline-block' }}>
+        <span className='entypo-left-open-big' ref={(prev) => { this.prevLinkArrow = prev; }} style={{ fontSize: 32, marginRight: 10 }}></span>
+        <span className='prev' ref={(prev) => { this.prevLinkRef = prev; }} onClick={() => this.prevLink()} style={{ marginTop: 4, verticalAlign: 'super' }}>prev</span>
+      </div>
+    );
   }
 
   prevLink() {
@@ -89,6 +118,7 @@ export default class Detail extends Component {
 
   render() {
     const item = this.props.params.item;
+    const _marg = item === 'leafage' ? 0 : 30;
 
     return(
       <section>
@@ -104,14 +134,16 @@ export default class Detail extends Component {
           <span className='entypo-up-open-big' style={{ fontSize: 32, marginRight: 10 }}></span>
         </ScrollToTop>
         <Hero className='detail-hero'>
-          <img src={`../../client/images/${this.renderLogo()}.svg`} className='logo' />
+          <Link to='/'>
+            <img src={`../../client/images/${this.renderLogo()}.svg`} className='logo' />
+          </Link>
           <Nav isOpen={ this.state.menuOpen } onOpen={ this.onOpen.bind(this) }/>
         </Hero>
         <section className='row top-of-page' style={{marginLeft: 20}}>
           <div>
-            <h4 className='breadcrumbs'>
+            { /*<h4 className='breadcrumbs'>
               <Link to='/' style={{color: '#FFB7C9', textDecoration: 'none'}}>Portfolio</Link> / <a onClick={ () => this.setCategory(myData[item].category) } style={{color: '#FFB7C9', textDecoration: 'none', textTransform: 'capitalize', cursor: 'pointer'}}>{myData[item].category}</a> / {myData[item].title}
-            </h4>
+            </h4> */ }
           </div>
         </section>
         <div className='container'>
@@ -127,42 +159,44 @@ export default class Detail extends Component {
               {
                 myData[item].images.map((image, idx) => {
                   return (
-                    <div key={idx} style={{marginBottom: 30}}>
+                    <div key={idx} style={{marginBottom: _marg}}>
                       <img src={`../../client/images/${image}`} style={{maxWidth: '100%'}}/>
-                      <p>{ myData[item].captions[idx] }</p>
+                      {
+                        myData[item].captions[idx] && <p>{ myData[item].captions[idx] }</p>
+                      }
                     </div>
                   );
                 })
               }
           </div>
           <div className="col-xs-12 col-sm-5" style={{padding: '0 1em'}}>
-            <h3 style={{ marginTop: 0 }}>{myData[item].title}</h3>
-            <p dangerouslySetInnerHTML={ this.setBodyCopy(myData[item].text.body) } style={{marginTop: -16}}></p>
-            <h5>
-              Category:
-            </h5>
-            <h6 style={{ textTransform: 'capitalize' }}>{myData[item].category}</h6>
-            <h5>
-              Date:
-            </h5>
-            <h6>
-              { myData[item].text.date }
-            </h6>
+            <div id='parappa'>
+              <div>
+                <h3 style={{ marginTop: 0 }}>{myData[item].title}</h3>
+                <span>
+                    { Parser( myData[item].text.body ) }
+                </span>
+                <h5>
+                  Category:
+                </h5>
+                <h6 style={{ textTransform: 'capitalize' }}>{myData[item].category}</h6>
+                <h5>
+                  Date:
+                </h5>
+                <h6>
+                  { myData[item].text.date }
+                </h6>
+              </div>
+            </div>
+            <div id='bottom-measure'></div>
           </div>
         </section>
         </div>
         <section className='detail-footer row'>
-          <div className='col-xs-4' style={{ display: 'inline-block' }}>
-            <span className='entypo-left-open-big' style={{ fontSize: 32, marginRight: 10 }}></span>
-            <span className='prev' onClick={() => this.prevLink()} style={{ marginTop: 4, verticalAlign: 'super' }}>prev</span>
-          </div>
+          { this.renderPrevLink() }
           <div className='col-xs-4'>
-            
           </div>
-          <div className='col-xs-4' style={{ display: 'inline-block' }}>
-            <span className='next' onClick={() => this.nextLink()} style={{ marginTop: 4, verticalAlign: 'super' }}>next</span>
-            <span className='entypo-right-open-big' style={{ fontSize: 32, marginLeft: 10 }}></span>
-          </div>
+          { this.renderNextLink() }
         </section>
       </section>
     );

@@ -1,18 +1,122 @@
 {
-  "first": {
+  "leafage": {
+    "css": {
+      "backgroundSize": "260%",
+      "backgroundPositionX": "44%",
+      "backgroundPositionY": "27%"
+    },
+    "id": "leafage",
+    "category": "digital",
+    "title": "Leafage: Regional Plant Identifier",
+    "backgroundImage": "plant_id_01.jpg",
+    "images": [
+      "plant_id_01.jpg",
+      "plant_id_02.jpg",
+      "plant_id_03.jpg",
+      "plant_id_04.jpg",
+      "plant_id_05.jpg",
+      "plant_id_06.jpg",
+      "plant_id_07.jpg",
+      "2017_detail_mobile1_08.gif"
+    ],
+    "captions": [
+      "",
+      "",
+      ""
+    ],
+    "text": {
+      "body": "<p>After looking online for a comprehensive, regional plant identifying app, I thought I could take some of the information from a number of resources and integrate them into a easy to use experience. I looked closely at how one would go about identifying a regional plant and went through the a user flow that could be fun, yet comprehensive. There are other functionalities that are in the works, such as sharing and personalized lists.</p><p>Logo design, user flow, icon design, and UI were all designed by myself.</p>",
+      "date": "2017"
+    }
+  },
+  "tbCake": {
+    "css": {
+      "backgroundSize": "259%",
+      "backgroundPositionX": "82%",
+      "backgroundPositionY": "74%"
+    },
+    "id": "tbCake",
+    "category": "digital",
+    "title": "Tommy Bahama Pina Colada cake",
+    "backgroundImage": "tb_cake_01.jpg",
+    "images": [
+      "tb_cake_01.jpg",
+      "tb_cake_02.jpg"
+    ],
+    "captions": [
+      "",
+      "",
+      ""
+    ],
+    "text": {
+      "body": "<p>For the holiday season, Tommy Bahama worked closely with Sweet Lady Jane Cakes to provide their popular Pi&ntilde;a Colada cake for purchase online. I was asked with creating a landing page and other digital collateral, that would both explain a bit of the history of the cake, as well as be a portal to Sweet Lady Jane's site. With limited time and resources, I assisted in art directing the photoshoot for the images that would be used on the site and various other advertising applications.</p>",
+      "date": "2017"
+    }
+  },
+  "tbindex": {
+    "css": {
+      "backgroundSize": "260%",
+      "backgroundPositionX": "52%",
+      "backgroundPositionY": "27%"
+    },
+    "id": "tbindex",
+    "category": "digital",
+    "title": "Tommy Bahama Index Pages",
+    "backgroundImage": "2017_detail_index1.jpg",
+    "images": [
+      "2017_detail_index1.jpg",
+      "2017_detail_index2.jpg",
+      "2017_detail_index3.jpg",
+      "2017_detail_index4.jpg"
+    ],
+    "captions": [
+      "",
+      "",
+      ""
+    ],
+    "text": {
+      "body": "<p>Tommy Bahama's marketing team loves content dense index pages. I produced a number of different layouts that were stylized based on season. The following are a collection of some of the different index pages I helped create.</p>",
+      "date": "2013-2017"
+    }
+  },
+  "tbmobile": {
+    "css": {
+      "backgroundSize": "201%",
+      "backgroundPositionX": "0%",
+      "backgroundPositionY": "3%"
+    },
+    "id": "tbmobile",
+    "category": "digital",
+    "title": "Tommy Bahama Mobile Redesign",
+    "backgroundImage": "2017_detail_mobile1.jpg",
+    "images": [
+      "2017_detail_mobile1.jpg",
+      "2017_detail_mobile2.jpg"
+    ],
+    "captions": [
+      "",
+      "",
+      ""
+    ],
+    "text": {
+      "body": "<p>Tommy Bahama's mobile site was in need of a major facelift. Myself and another designer were tasked with redesigning the entire site.</p><p>With limited usability testing, we used well researched best-practices and heuristics to building out the 1.0 version of the mobile site. Shown are a few of the sketches and high-fidelity mocks.</p><p>The hope is that the mobile site will be used as a jumping off point to try and improve the interaction capabilities of the main site.</p>",
+      "date": "2017"
+    }
+  },
+  "tbreskin": {
     "hasLaptop": "true",
     "css": {
       "backgroundSize": "initial",
       "backgroundPositionX": "50%",
       "backgroundPositionY": "14%"
     },
-    "id": "first",
+    "id": "tbreskin",
     "category": "digital",
     "title": "Tommy Bahama Site Re-Skin",
     "backgroundImage": "1_2017_detail_tbweb_1_anim.jpg",
     "images": [
-      "1_2017_detail_tbweb_1.jpg",
-      "1_2017_detail_tbweb_3.jpg",
+      "2017_detail_tbweb1.jpg",
+      "2017_detail_tbweb2.jpg",
       "1_2017_detail_tbweb_4.jpg"
     ],
     "captions": [
@@ -21,24 +125,72 @@
       "Previous versions of the website for comparison"
     ],
     "text": {
-      "body": "<p>The main e-Commerce website for Tommy Bahama was being moved to a new platform and at the same time, it was getting a aesthetic refresh.</p><p>I was tasked at picking up this project that had been partially completed. While the previous owner of the project had done quite a bit of work, I had the disadvantage of not having a lot of background before being thrown into the project. Files were buried and I on;y had half the information, so I had to go through and make sure that consistency was put in place, so that future revisions could be made easier. I was responsible for final styling decisions and working with the developers to get changes done in a very short period of time.</p><p>An added obstacle in the site revision, was that, there were few layout changes that could be made. Aesthetic changes needed to be carefully considered, while maintaining business needs, and working within the restrictive technology platform. The ask was for the site to have a lighter, more modern aesthetic, while allowing the product to shine. Simplicity was the approach that I took, in order to let the product speak for itself. Some minor navigation changes helped declutter the home page, while navigation colors were consolidated to reflect a more cohesive and consistent visual language.</p>",
+      "body": "<p>The main e-Commerce website for Tommy Bahama was being moved to a new platform and at the same time, it was getting a aesthetic refresh.</p><p>I was tasked at picking up this project that had been partially completed. While the previous owner of the project had done quite a bit of work, I had the disadvantage of not having a lot of background before being thrown into the project. Files were buried and I only had half the information, so I had to go through and make sure that consistency was put in place, so that future revisions could be made easier. I was responsible for final styling decisions and working with the developers to get changes done in a very short period of time.</p><p>An added obstacle in the site revision, was that, there were few layout changes that could be made. Aesthetic changes needed to be carefully considered, while maintaining business needs, and working within the restrictive technology platform. The ask was for the site to have a lighter, more modern aesthetic, while allowing the product to shine. Simplicity was the approach that I took, in order to let the product speak for itself. Some minor navigation changes helped declutter the home page, while navigation colors were consolidated to reflect a more cohesive and consistent visual language.</p>",
       "date": "Spring 2016"
     }
   },
-  "second": {
+  "tbcareers": {
+    "css": {
+      "backgroundSize": "190%",
+      "backgroundPositionX": "50%",
+      "backgroundPositionY": "30%"
+    },
+    "id": "tbcareers",
+    "category": "digital",
+    "title": "Tommy Bahama Careers Page",
+    "backgroundImage": "2017_detail_careers1.jpg",
+    "images": [
+      "2017_detail_careers1.jpg",
+      "2017_detail_careers2.jpg"
+    ],
+    "captions": [
+      "",
+      "",
+      ""
+    ],
+    "text": {
+      "body": "<p>The Tommy Bahama careers page got a much needed facelift earlier this year.</p><p>I was tasked with creating a non-responsive website for desktop with limited ability to add interaction elements to the page. GIFs, rollovers and carousels were the only tools I had access to create something a little more elevated than our previous version.</p>",
+      "date": "2017"
+    }
+  },
+  "tbswimfinder": {
+    "css": {
+      "backgroundSize": "200%",
+      "backgroundPositionX": "86%",
+      "backgroundPositionY": "27%"
+    },
+    "id": "tbswimfinder",
+    "category": "digital",
+    "title": "Tommy Bahama Swim Finder",
+    "backgroundImage": "2017_detail_swimfinder1.jpg",
+    "images": [
+      "2017_detail_swimfinder1.jpg",
+      "2017_detail_swimfinder2.jpg"
+    ],
+    "captions": [
+      "",
+      "",
+      ""
+    ],
+    "text": {
+      "body": "<p>The Swim Finder is a visual search function to help assist customers in finding the perfect swimsuit.</p><p>Designed with desktop, iPad and an 32 inch in-store touch display in mind, due to backend limitations, I had to make sure that a single non-responsive design worked across all these platforms.</p>",
+      "date": "2017"
+    }
+  },
+  "tboutlet": {
     "css": {
       "backgroundSize": "cover",
       "backgroundPositionX": "50%",
       "backgroundPositionY": "50%"
     },
-    "id": "second",
+    "id": "tboutlet",
     "category": "digital",
     "title": "Tommy Bahama Outlet Re-Skin",
     "backgroundImage": "2_2017_detail_tboutlet_1.jpg",
     "images": [
       "2_2017_detail_tboutlet_1.jpg",
-      "2_2017_detail_tboutlet_2.jpg",
-      "2_2017_detail_tboutlet_3.jpg"
+      "2017_detail_outlet2.jpg",
+      "2017_detail_outlet_style.jpg"
     ],
     "captions": [
       "Outlet desktop homepage and sign in",
@@ -46,17 +198,17 @@
       "Style guide and redlines"
     ],
     "text": {
-      "body": "<p>After the main site revision, the business team felt that it would be in the best interest of the company to get all of the e-Commerce sites to look as cohesive as possible. I was tasked with restyling the entire outlet site, while maintaining the integrity of the content layout.</p><p>After having gone through the initial struggle of figuring out all the components for the main site, I was able to streamline the redlining process, as well as produce a more comprehensive style guide for development.</p><p>The end result was a much cleaner and integrated look and feel than the previous version of the outlet site.</p>",
+      "body": "<p>After the success of full-price site refresh, there was a business request to better align our off-price or outlet site with the look and feel of the full-price site. I was asked to restyle the entire outlet site, while maintaining the integrity of the content layout.</p><p>After experiencing some struggles and finding solutions while working on the main site refresh, I was able to streamline the redlining process, as well as produce a more comprehensive style guide for development.</p><p>The end result was a much cleaner and integrated look and feel than the previous version of the outlet site.</p>",
       "date": "Fall/Winter 2016"
     }
   },
-  "third": {
+  "tbemails": {
     "css": {
       "backgroundSize": "250%",
       "backgroundPositionX": "15%",
       "backgroundPositionY": "9%"
     },
-    "id": "third",
+    "id": "tbemails",
     "category": "digital",
     "title": "Tommy Bahama Emails",
     "backgroundImage": "3_2017_detail_tbemail_1.jpg",
@@ -67,25 +219,25 @@
       ""
     ],
     "text": {
-      "body": "<p>Tommy Bahama sends out over 400 full circulation emails a year, and that isn't including th egeo-targeted or special events emails. I have done my fair share of all of them.</p><p>They range from simple templated emails to quick-turn custom messaging that seem to always be \"due yesterday\", even though you received the brief an hour ago. Changes and revisions were common. My ability to be nimble helped when these were the majority of my work load.</p>",
+      "body": "<p>Tommy Bahama deploys out over 400 full-circulation emails a year (not including geo-targeted, triggered and transactional, or special events emails). I have done my fair share of all of them.</p><p>They range from simple templated emails to quick-turn custom messaging that are almost always on very tight turnaround schedules, with sometimes frequent revisions based on shifting marketing priorities. I found being nimble and asking questions always helped to get these churned out on time, with great design that met the requests of my business partners. </p>",
       "date": "2013-2016"
     }
   },
-  "fourth": {
+  "fremontartwalk": {
     "hasLaptop": "true",
     "css": {
       "backgroundSize": "cover",
       "backgroundPositionX": "50%",
       "backgroundPositionY": "50%"
     },
-    "id": "fourth",
+    "id": "fremontartwalk",
     "category": "digital",
     "title": "Fremont Artwalk Website",
     "backgroundImage": "5_2017_detail_fremont_1.jpg",
     "images": [
-      "5_2017_detail_fremont_2.jpg",
-      "5_2017_detail_fremont_3.jpg",
-      "5_2017_detail_fremont_4.jpg"
+      "2017_detail_fremont1.jpg",
+      "2017_detail_fremont2.jpg",
+      "2017_detail_fremont3.jpg"
     ],
     "captions": [
       "Artist display page",
@@ -93,17 +245,17 @@
       "Map of the event"
     ],
     "text": {
-      "body": "<p>The fun and quirky neighborhood of Fremont in Seattle was in need of a digital portal where the art director and artists could connect for the monthly artwalk. It also needed to be a place where attendees could find information quickly.</p><p>I used illustrations of the neighborhood icons and bright colors to capture the eccentricity of the neighborhood, while utilizing straightforward and easy navigation to make it easy for both participants and attendees to get the information they needed.</p><p>Developement help provided by Andrew Burgess</p>",
+      "body": "<p>Seattle's fun and quirky Fremont neighborhood needed a digital portal where the Artwalk director and artists could digitally connect to plan monthly artwalks. It also needed to be a place where attendees could quickly find information.</p><p>I used illustrations of neighborhood icons and bright colors to capture the eccentricity of the neighborhood, while utilizing straightforward and easy navigation to make it simple for both participants and attendees to get the information they needed.</p><p>Development help provided by Andrew Burgess</p>",
       "date": "2012"
     }
   },
-  "fifth": {
+  "skateboards": {
     "css": {
       "backgroundSize": "308%",
       "backgroundPositionX": "15%",
       "backgroundPositionY": "37%"
     },
-    "id": "fifth",
+    "id": "skateboards",
     "category": "misc",
     "title": "Skateboards",
     "backgroundImage": "4_2017_detail_skate_1.jpg",
@@ -120,17 +272,17 @@
       ""
     ],
     "text": {
-      "body": "<p>During my last year or so at Zumiez, the private label team was asked to design and produce price-point conscience private label longboard line.</p><p>I worked with buying team to come up with a logo, the the board shapes and construction. Once we finalized the technical aspects with the manufacturer, we customized wheels and trucks, as well as, worked on creating various designs to go on the bottom sides of the boards.</p>",
+      "body": "<p>Another project at Zumiez where the private label team was asked to design and produce was a price-point conscience private label longboard line.</p><p>I worked with buying team to create a logo, the the board shapes, and construction. Once we finalized the technical aspects with the manufacturer, we customized wheels and trucks and  created various designs to go on the bottom sides of the boards.</p>",
       "date": "2012"
     }
   },
-  "sixth": {
+  "packaging": {
     "css": {
       "backgroundSize": "277%",
       "backgroundPositionX": "86.5%",
       "backgroundPositionY": "47%"
     },
-    "id": "sixnth",
+    "id": "packaging",
     "category": "print",
     "title": "Apparel Packaging",
     "backgroundImage": "6_2017_detail_zumzpack_1.jpg",
@@ -143,17 +295,17 @@
       ""
     ],
     "text": {
-      "body": "<p>While working in house for the Zumiez private label team, I got the opportunity to work on a number of different apparel brands. Each brand targeted a different segment of a similar demographic. The brands, which catered to 13-25 year old skateboarders and snowboarders, ran from technical to trendy, with a little bit of everything in between.</p><p>The samples seen here are just a few examples of apparel packaging that I designed while I was there. Most packaging groups usually contained well over 50+ items per group, with 3-4 packaging groups being developed at one time.  I concepted, designed, created production files, tracked, worked with domestic and overseas vendors, to produce samples and made all final approvals that came through.</p>",
+      "body": "<p>While working in-house for the Zumiez private label team, I got the opportunity to work on a number of different apparel brands. Each brand targeted a different segment of a similar demographic. The brands--which catered to 13- to 25-year- old skateboarders and snowboarders--ran from technical to trendy, with a little bit of everything in between.</p><p>The samples seen here are just a few examples of apparel packaging that I designed during my tenure. Most packaging groups typically contained well over 50+ items per group, with 3-4 packaging groups developed at one time. I concepted, designed, created production files, tracked, worked with domestic and overseas vendors to produce samples, and made all final approvals.</p>",
       "date": "2010-2012"
     }
   },
-  "seventh": {
+  "posters": {
     "css": {
       "backgroundSize": "213%",
       "backgroundPositionX": "3%",
       "backgroundPositionY": "5%"
     },
-    "id": "seventh",
+    "id": "posters",
     "category": "misc",
     "title": "Posters",
     "backgroundImage": "7_2017_detail_gigposters.jpg",
@@ -164,17 +316,17 @@
       ""
     ],
     "text": {
-      "body": "<p>In my free time, I freelance and volunteer with a number of promoters and organizations to create event promotions. These are a number of posters that I created. Most of the posters usually had an accompanying flyer. Sometimes I would be asked to create additional collateral including lapel pins, merch and social media assets.</p>",
+      "body": "<p>In my free time, I freelance and volunteer with a number of promoters and organizations to create event promotions and posters, many of which had an accompanying flyer.. I would also sometimes create additional collateral including lapel pins, merch, and social media assets.</p>",
       "date": "2009-2015"
     }
   },
-  "eighth": {
+  "tshirts": {
     "css": {
       "backgroundSize": "initial",
       "backgroundPositionX": "94%",
       "backgroundPositionY": "50%"
     },
-    "id": "eighth",
+    "id": "tshirts",
     "category": "misc",
     "title": "T-Shirt Graphics",
     "backgroundImage": "8_2017_detail_tees_1.jpg",
@@ -185,17 +337,17 @@
       ""
     ],
     "text": {
-      "body": "<p>T-shirts were a staple business at Zumiez when I was working there. 5-10 tees would be designed on a monthly basis, all of which had to be on trend, timely, and desirable.</p><p>On top of designing, I also created all of the technical packages that were sent to the manufacturers, which included all the measurements and details of the end product.</p><p>I worked directly with domestic and overseas vendors to get the artwork I designed, produced.</p><p>There were also times when I was asked to work directly with third party vendors, whom I would provide art direction and trend analysis packages.</p>",
+      "body": "<p>T-shirts were a staple business at Zumiez. 5-10 tees would be designed on a monthly basis, all of which had to be on-trend, and desirable.</p><p>On top of designing, I also created all of the technical packages that were sent to the manufacturers, which included all the measurements and details of the end product.</p><p>I worked directly with domestic and overseas vendors to get tees with my artwork produced.</p><p>There were also times when I was asked to work directly with third-party vendors, for whom I would provide art direction and trend analysis packages.</p>",
       "date": "2008-2012"
     }
   },
-  "ninth": {
+  "patterns": {
     "css": {
       "backgroundSize": "initial",
       "backgroundPositionX": "86%",
       "backgroundPositionY": "41%"
     },
-    "id": "ninth",
+    "id": "patterns",
     "category": "misc",
     "title": "Patterns",
     "backgroundImage": "9_2017_detail_patterns_1.jpg",
@@ -206,17 +358,17 @@
       ""
     ],
     "text": {
-      "body": "<p>Working on the private label team at Zumiez allowed me to develop a lot of new skills. One of those skills was textile printing. My patterns adorned everything from apparel to backpacks, wallets, belts, the list goes on. I was able to utilize various types of techniques including sublimation, discharge printing, silk-screen, as well as large scale engineered prints.</p>",
+      "body": "<p>While on the Zumiez private label team, I also learned textile printing. My patterns adorned everything from apparel to backpacks, wallets, belts... the list goes on. I was able to utilize various types of techniques including sublimation, discharge printing, and screen printing, as well as large-scale engineered prints.</p>",
       "date": "2008-2012"
     }
   },
-  "tenth": {
+  "shamelessaudio": {
     "css": {
       "backgroundSize": "cover",
       "backgroundPositionX": "37%",
       "backgroundPositionY": "41%"
     },
-    "id": "tenth",
+    "id": "shamelessaudio",
     "category": "misc",
     "title": "Shameless Audio Release",
     "backgroundImage": "2017_detail_ourreflect_1.jpg",
@@ -235,17 +387,40 @@
       "Flyers"
     ],
     "text": {
-      "body": "<p>Shameless Productions decided that they wanted to move beyond club nights and asked me to help design their first album cover, a logo revamp, and all the collateral that came along with that. On top of the album artwork, I also did all social and online advertising assets, posters, flyers and merchandise graphics.</p>",
+      "body": "<p>Shameless Productions wanted to move beyond club nights and hired me to help design their first album cover, a logo revamp, and all the collateral that came along with that. On top of the album artwork, I also did all social and online advertising assets, posters, flyers, and merchandise graphics.</p>",
       "date": "2013"
     }
   },
-  "eleventh": {
+  "theplanet": {
+    "css": {
+      "backgroundSize": "cover",
+      "backgroundPositionX": "50%",
+      "backgroundPositionY": "14%"
+    },
+    "id": "theplanet",
+    "category": "print",
+    "title": "The Planet Magazine",
+    "backgroundImage": "2017_detail_theplanet1.jpg",
+    "images": ["2017_detail_theplanet1.jpg",
+      "2017_detail_theplanet2.jpg"
+    ],
+    "captions": [
+      "",
+      "",
+      ""
+    ],
+    "text": {
+      "body": "<p>The Planet is a campus environmental magazine produced by students at Western Washington University. I helped design multi-page layouts and covers for a number of articles. I worked closely with another designer to create cohesive text, image and stylistic treatments that tied each issue together. We worked closely with writers, photographers, printers, and editors to produce this quarterly magazine.</p>",
+      "date": "2006"
+    }
+  },
+  "4thofjuly": {
     "css": {
       "backgroundSize": "cover",
       "backgroundPositionX": "47%",
       "backgroundPositionY": "41%"
     },
-    "id": "eleventh",
+    "id": "4thofjuly",
     "category": "print",
     "title": "4th of July Soiree",
     "backgroundImage": "2017_detail_4thofjuly_1.jpg",
@@ -258,7 +433,7 @@
       "Examples of 1960s fireworks packaging I used as inspiration"
     ],
     "text": {
-      "body": "<p>This annual picnic needed a simple RSVP card for guests to send back with important information for the host. It was inspired by vintage firework packaging.</p>",
+      "body": "<p>This annual picnic needed a simple RSVP card for guests to send back with important information for the host. It was inspired by vintage fireworks packaging.</p>",
       "date": "2014"
     }
   }
