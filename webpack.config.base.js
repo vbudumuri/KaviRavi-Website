@@ -28,7 +28,7 @@ module.exports = {
     publicPath: 'http://localhost:3000/client/',
     filename: 'bundle.js'
   },
-
+  devtool: 'source-map',
   resolve: {
     root: path.join(__dirname, ''),
     modulesDirectories: [
@@ -53,14 +53,6 @@ module.exports = {
     loaders: [
       {test: /\.scss$/, loader: 'style!css!autoprefixer?browsers=last 2 version!sass?outputStyle=expanded'},
       {test: /\.json$/, loader: 'json-loader'},
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2016', 'es2015', 'react'], 
-          plugins: ["add-module-exports"]
-        }
-      },
       {
         test: /\.css$/,
         loader: 'style-loader!css-loader'
