@@ -9,6 +9,8 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { Link } from 'react-router';
 import DummyText from './DummyText';
 import { Fade } from 'react-slideshow-image';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 export default class IndexComponent extends Component {
   constructor(props, ...args) {
@@ -126,7 +128,34 @@ export default class IndexComponent extends Component {
                 <h3 >Comments</h3>
             </div>
           </section>
-          <div style={{ justifyContent: 'center' }}>{DummyText()}</div>
+          <VerticalTimeline>
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                date="2011 - present"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={''}
+                position={'right'}
+              >
+                <h3 className="vertical-timeline-element-title">Creative Director</h3>
+                <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+                <p>
+                  Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+                </p>
+              </VerticalTimelineElement>
+              <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                date="2010 - 2011"
+                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                icon={''}
+                position={'left'}
+              >
+                <h3 className="vertical-timeline-element-title">Art Director</h3>
+                <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
+                <p>
+                  Creative Direction, User Experience, Visual Design, SEO, Online Marketing
+                </p>
+              </VerticalTimelineElement>
+          </VerticalTimeline>
         </div>
       </div>
     );
