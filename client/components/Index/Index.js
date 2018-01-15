@@ -8,85 +8,7 @@ import myData from '../../../config/data.json';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { Link } from 'react-router';
 import DummyText from './DummyText';
-import { Slide } from 'react-slideshow-image';
-
-const data = [
-  {
-    id         : "slide1",
-    imagePath  : "client/images/raja40.jpg",
-    imageAlt   : "Slide 1 Image",
-  },
-  {
-    id         : "slide2",
-    imagePath  : "client/images/raja43.jpg",
-    imageAlt   : "Slide 2 Image",
-  },
-  {
-    id         : "slide3",
-    imagePath  : "client/images/raja28.jpg",
-    imageAlt   : "Slide 3 Image",
-  },
-];
-
-const Slideshow = ({ currentSlide, togglePrev, toggleNext, toggleSlide }) => (
-    <div className="slideshow">
-        <div>
-        <Controls
-            togglePrev={togglePrev}
-            toggleNext={toggleNext}
-            currentSlide={currentSlide}
-        />
-    </div>
-        <Pagination
-            toggleSlide={toggleSlide}
-        />
-    </div>
-  );
-
-const Slides = ({ currentSlide }) => {
-var slidesNodes = data.map(function (slideNode, index) {
-var isActive = currentSlide === index;
-  return (
-    <div className={isActive ? 'slide--active slide' : 'slide'}>
-      <img
-          src={slideNode.imagePath}
-          alt={slideNode.imageAlt}
-          style={{ maxWidth: '100%', maxHeight: '100%'}}
-      />
-    </div>
-  );
-});
-return (
-  <div className="slides">
-    {slidesNodes}
-  </div>
-);
-}
-
-const Controls = ({ togglePrev, toggleNext, currentSlide }) => {
-  return (
-    <div className="controls" style={{ display: 'flex' }}>
-      <div className="toggle toggle--prev" onClick={() => togglePrev()}>Prev</div>
-      <Slides
-          currentSlide={currentSlide}
-      />
-      <div className="toggle toggle--next" onClick={() => toggleNext()}>Next</div>
-    </div>
-  );
-}
-
-const Pagination = ({ toggleSlide }) => {
-    var paginationNodes = data.map(function (paginationNode, index) {
-      return (
-        <span className="pager" onClick={() => toggleSlide(paginationNode.id)}>{paginationNode.title}</span>
-      );
-    });
-    return (
-      <div className="pagination">
-        {paginationNodes}
-      </div>
-    );
-  }
+import { Fade } from 'react-slideshow-image';
 
 export default class IndexComponent extends Component {
   constructor(props, ...args) {
@@ -133,35 +55,6 @@ export default class IndexComponent extends Component {
     } else {
       return 'ts_logo';
     }
-  }
-
-
-  toggleNext() {
-    var current = this.state.currentSlide;
-    var next = current + 1;
-    if (next > data.length - 1) {
-      next = 0;
-    }
-    this.setState({ currentSlide: next });
-  }
-
-  togglePrev() {
-    var current = this.state.currentSlide;
-    var prev = current - 1;
-    if (prev < 0) {
-      prev = data.length - 1;
-    }
-    this.setState({ currentSlide: prev });
-  }
-
-  toggleSlide(id) {
-    var index = data.map(function (el) {
-      return (
-        el.id
-      );
-    });
-    var currentIndex = index.indexOf(id);
-    this.setState({ currentSlide: currentIndex });
   }
 
 
@@ -212,22 +105,20 @@ export default class IndexComponent extends Component {
             <div className='row' style={{ justifyContent: 'center' }}>
                 <h3 >Our Pictures</h3>
             </div>
-            <Slideshow
-                currentSlide={this.state.currentSlide}
-                toggleNext={this.toggleNext}
-                togglePrev={this.togglePrev}
-                toggleSlide={this.toggleSlide}
-            />
+            <div style={{ justifyContent: 'center' }}>{DummyText()}</div>
           </section>
         </div>
         <div className='bottom-section' id='bigday'>
           <section className='container'>
-            <Slide
-              images={images}
-              duration="5000"
-              transitionDuration="1000"
-            />
+            <div className='row' style={{ justifyContent: 'center' }}>
+                <h3 >Big Day</h3>
+            </div>
           </section>
+          <Fade
+            images={images}
+            duration="5000"
+            transitionDuration="1000"
+          />
         </div>
         <div className='bottom-section' id='comments'>
           <section className='container'>
