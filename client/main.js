@@ -10,7 +10,7 @@ import Index from 'components/Index/';
 import Detail from 'components/detail/';
 import Contact from 'components/contact/';
 import About from 'components/about/';
-import { Slide } from 'react-slideshow-image';
+
 require('smoothscroll-polyfill').polyfill();
 
 function hashLinkScroll() {

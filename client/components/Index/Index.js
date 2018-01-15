@@ -8,6 +8,7 @@ import myData from '../../../config/data.json';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { Link } from 'react-router';
 import DummyText from './DummyText';
+import { Slide } from 'react-slideshow-image';
 
 const data = [
   {
@@ -173,6 +174,12 @@ export default class IndexComponent extends Component {
       }
     });
 
+    const images = [
+      'client/images/raja40.jpg',
+      'client/images/raja43.jpg',
+      'client/images/raja28.jpg'
+  ];
+
     return (
       <div>
         <section style={{ marginBottom: 120 }}>
@@ -215,10 +222,11 @@ export default class IndexComponent extends Component {
         </div>
         <div className='bottom-section' id='bigday'>
           <section className='container'>
-            <div className='row' style={{ justifyContent: 'center' }}>
-                <h3>The Big Day</h3>
-            </div>
-            <div style={{ justifyContent: 'center' }}>{DummyText()}</div>
+            <Slide
+              images={images}
+              duration="5000"
+              transitionDuration="1000"
+            />
           </section>
         </div>
         <div className='bottom-section' id='comments'>
