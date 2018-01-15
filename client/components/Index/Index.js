@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import autobind from 'react-autobind';
 import Hero from '../hero';
 import Nav from '../nav';
 import CategoryNav from '../categoryNav';
@@ -6,16 +7,98 @@ import Thumb from '../thumb';
 import myData from '../../../config/data.json';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { Link } from 'react-router';
+import DummyText from './DummyText';
+
+const data = [
+  {
+    id         : "slide1",
+    imagePath  : "client/images/raja40.jpg",
+    imageAlt   : "Slide 1 Image",
+  },
+  {
+    id         : "slide2",
+    imagePath  : "client/images/raja43.jpg",
+    imageAlt   : "Slide 2 Image",
+  },
+  {
+    id         : "slide3",
+    imagePath  : "client/images/raja28.jpg",
+    imageAlt   : "Slide 3 Image",
+  },
+];
+
+const Slideshow = ({ currentSlide, togglePrev, toggleNext, toggleSlide }) => (
+    <div className="slideshow">
+        <div>
+        <Controls
+            togglePrev={togglePrev}
+            toggleNext={toggleNext}
+            currentSlide={currentSlide}
+        />
+    </div>
+        <Pagination
+            toggleSlide={toggleSlide}
+        />
+    </div>
+  );
+
+const Slides = ({ currentSlide }) => {
+var slidesNodes = data.map(function (slideNode, index) {
+var isActive = currentSlide === index;
+  return (
+    <div className={isActive ? 'slide--active slide' : 'slide'}>
+      <img
+          src={slideNode.imagePath}
+          alt={slideNode.imageAlt}
+          style={{ maxWidth: '100%', maxHeight: '100%'}}
+      />
+    </div>
+  );
+});
+return (
+  <div className="slides">
+    {slidesNodes}
+  </div>
+);
+}
+
+const Controls = ({ togglePrev, toggleNext, currentSlide }) => {
+  return (
+    <div className="controls" style={{ display: 'flex' }}>
+      <div className="toggle toggle--prev" onClick={() => togglePrev()}>Prev</div>
+      <Slides
+          currentSlide={currentSlide}
+      />
+      <div className="toggle toggle--next" onClick={() => toggleNext()}>Next</div>
+    </div>
+  );
+}
+
+const Pagination = ({ toggleSlide }) => {
+    var paginationNodes = data.map(function (paginationNode, index) {
+      return (
+        <span className="pager" onClick={() => toggleSlide(paginationNode.id)}>{paginationNode.title}</span>
+      );
+    });
+    return (
+      <div className="pagination">
+        {paginationNodes}
+      </div>
+    );
+  }
 
 export default class IndexComponent extends Component {
   constructor(props, ...args) {
     super(props, ...args);
 
+    autobind(this);
     this.state = {
       menuOpen: false,
       platform: 'mobile',
       category: 'all',
-      filteredContent: []
+      filteredContent: [],
+      currentSlide: 0,
+      data: [],
     }
   }
   componentWillMount() {
@@ -52,6 +135,35 @@ export default class IndexComponent extends Component {
   }
 
 
+  toggleNext() {
+    var current = this.state.currentSlide;
+    var next = current + 1;
+    if (next > data.length - 1) {
+      next = 0;
+    }
+    this.setState({ currentSlide: next });
+  }
+
+  togglePrev() {
+    var current = this.state.currentSlide;
+    var prev = current - 1;
+    if (prev < 0) {
+      prev = data.length - 1;
+    }
+    this.setState({ currentSlide: prev });
+  }
+
+  toggleSlide(id) {
+    var index = data.map(function (el) {
+      return (
+        el.id
+      );
+    });
+    var currentIndex = index.indexOf(id);
+    this.setState({ currentSlide: currentIndex });
+  }
+
+
   render() {
     const thumbnails = Object.keys(myData).map((item, idx) => {
       if(~myData[item].category.indexOf(this.state.category) || this.state.category === 'all') {
@@ -65,75 +177,57 @@ export default class IndexComponent extends Component {
       <div>
         <section style={{ marginBottom: 120 }}>
           <Hero className='detail-hero'>
-            <Link to='/'>
-              <img src={`client/images/${this.renderLogo()}.svg`} className='logo' />
-            </Link>
-            <Nav isOpen={ this.state.menuOpen } onOpen={ this.onOpen.bind(this) }/>
+            <Nav onOpen={ this.onOpen.bind(this) }/>
           </Hero>
         </section>
-        <section style={{ marginBottom: 20 }}>
-          <CategoryNav setCategory={ (evt) => this.filterContent(evt) } currentCategory={ this.state.category }/>
-        </section>
-        <section className='container'>
-            <ReactCSSTransitionGroup
-              component='div'
-              className='row'
-              transitionName="thumbs"
-              transitionAppear={true}
-              transitionAppearTimeout={500}
-              transitionEnterTimeout={500}
-              transitionLeaveTimeout={300}>
-              { thumbnails }
-            </ReactCSSTransitionGroup>
-        </section>
+        <div>
+            <img src={'client/images/raja40.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />
+        </div>
         <div className='bottom-section' id='about'>
           <section className='container'>
-            <div className='row'>
-              <div className='col-xs-12 col-sm-12 col-lg-4' style={{padding: '20px 40px'}}>
-                <h3>About Me</h3>
-                  <p>I'm a Seattle-based, multidisciplinary designer with over a decade of experience under my belt. I've had the opportunity to work on a variety of projects, too: snowboards, magazines, websites, and beanies--those are just a few of the things I've designed.
-                  </p>
-                  <p>
-                  The majority of my experience has been with in-house design teams. It's enabled me to develop a strong eye for consistent and cohesive branding across various touchpoints while aligning with the needs from internal stakeholders in both business and creative. The end result? Elegant and creative design solutions that effectively communicate the brand vision.
-                  </p>
-                  <p>
-                  I love new opportunities and thrive in environments where I can learn new things. I approach each project from both a design perspective and a customer perspective, which leads me to question when things don't seem to make sense from those vantages.
-                  </p>
-                  <p>
-                  Currently, I'm focused on creating functional and aesthetically beautiful digital experiences. That, and trying to keep my sourdough start alive...
-                  </p>
-                <div>
-                  <a href={"mailto:info@tiffanysmithdesign.com?subject=Request for contact"} style={{display: 'inline-block', marginTop: 10, fontSize: 16, padding: ' 14px 20px', borderRadius: 3, border: 'none', color: '#fff', backgroundColor: '#FFB7C9', fontFamily: 'Quicksand', textDecoration: 'none'}}>Email me</a>
+            <div className='row' style={{ justifyContent: 'center' }}>
+                <h3 >About Us</h3>
+            </div>
 
-                  <a href={"client/images/tsmith_resume_2017.pdf"} style={{display: 'inline-block', marginTop: 10, fontSize: 16, padding: ' 14px 20px', borderRadius: 3, border: 'none', color: '#fff', backgroundColor: '#FFB7C9', fontFamily: 'Quicksand', textDecoration: 'none', marginLeft: 20}}>Resume</a>
-                </div>
-              </div>
-              <div className='col-xs-12 col-sm-6 col-lg-4' style={{padding: '20px 40px'}}>
-                <h3>Biz-ness</h3>
-                  <ul>
-                    <li>10+ years experience with in-house brand teams.</li>
-                    <li>Cool with collaboration, but also totally autonomous.</li>
-                    <li>Honest and clear communication.</li>
-                    <li>Strong organizational (love those spreadsheets!) and communication skills.</li>
-                    <li>The occasional well placed joke, for  levitiy's sake.</li>
-                    <li>Strong customer centered design.</li>
-                    <li>Working with stakeholders to achieve business goals.</li>
-                  </ul>
-              </div>
-              <div className='col-xs-12 col-sm-6 col-lg-4'  style={{padding: '20px 40px'}}>
-                <h3>Pixel-Pushing</h3>
-                  <ul>
-                    <li>Photoshop</li>
-                    <li>Illustrator</li>
-                    <li>Sketch</li>
-                    <li>HTML/CSS</li>
-                    <li>Digital</li>
-                    <li>Print</li>
-                    <li>Office</li>
-                  </ul>
-              </div>
+            <div style={{ justifyContent: 'center' }}>{DummyText()}</div>
+          </section>
+        </div>
+        <div className='bottom-section' id='journey'>
+          <section className='container'>
+            <div className='row' style={{ justifyContent: 'center' }}>
+                <h3 >Our Journey</h3>
             </div>
           </section>
+          <div style={{ justifyContent: 'center' }}>{DummyText()}</div>
+        </div>
+        <div className='bottom-section' id='photos'>
+          <section className='container'>
+            <div className='row' style={{ justifyContent: 'center' }}>
+                <h3 >Our Pictures</h3>
+            </div>
+            <Slideshow
+                currentSlide={this.state.currentSlide}
+                toggleNext={this.toggleNext}
+                togglePrev={this.togglePrev}
+                toggleSlide={this.toggleSlide}
+            />
+          </section>
+        </div>
+        <div className='bottom-section' id='bigday'>
+          <section className='container'>
+            <div className='row' style={{ justifyContent: 'center' }}>
+                <h3>The Big Day</h3>
+            </div>
+            <div style={{ justifyContent: 'center' }}>{DummyText()}</div>
+          </section>
+        </div>
+        <div className='bottom-section' id='comments'>
+          <section className='container'>
+            <div className='row' style={{ justifyContent: 'center' }}>
+                <h3 >Comments</h3>
+            </div>
+          </section>
+          <div style={{ justifyContent: 'center' }}>{DummyText()}</div>
         </div>
       </div>
     );

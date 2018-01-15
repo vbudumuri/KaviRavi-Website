@@ -21,7 +21,7 @@
     @media (min-width: 75em) { @content; }
   }
   @else if $point == medium {
-    @media (min-width: 48em) { @content; }
+    @media (min-width: 0em) { @content; }
   }
   @else if $point == small {
     @media (min-width: 30em)  { @content; }
@@ -38,13 +38,13 @@ $purple: #27223B;
 .container {
   margin: 0 auto 0;
   max-width: 100%;
-  @include breakpoint(small) { 
+  @include breakpoint(small) {
      max-width: 90%;
   }
-  // @include breakpoint(medium) { 
+  // @include breakpoint(medium) {
   //    max-width: 90%;
   // }
-  @include breakpoint(large) { 
+  @include breakpoint(large) {
     max-width: 1220px;
   }
 }
@@ -68,6 +68,7 @@ body {
 }
 
 .hero {
+  z-index: 10;
   background-color: #fff;
   height: 340px;
   &.detail-hero {
@@ -76,7 +77,7 @@ body {
     left: 0;
     position: fixed;
     width: 100%;
-    @include breakpoint(medium) { 
+    @include breakpoint(medium) {
       height: 112px;
       background-color: #fff;
     }
@@ -98,17 +99,17 @@ body {
     color: #fff;
     &.is-active {
       background-color: rgba(39,34,59,0.9);
-      @include breakpoint(medium) { 
+      @include breakpoint(medium) {
         background-color: transparent;
       }
     }
-    @include breakpoint(medium) { 
+    @include breakpoint(medium) {
       background-color: transparent;
       padding-top: 20px;
     }
     div {
       padding: $pad*1.2;
-      @include breakpoint(medium) { 
+      @include breakpoint(medium) {
         padding: $pad;
       }
       a {
@@ -134,7 +135,7 @@ body {
         height: 265;
         @include breakpoint(medium) {
           height: 100%;
-        }  
+        }
       }
       @include breakpoint(medium) {
         height: inherit;
@@ -152,12 +153,12 @@ body {
           }
         }
       }
-      @include breakpoint(medium) { 
+      @include breakpoint(medium) {
         display: none;
       }
     }
   }
-  @include breakpoint(medium) { 
+  @include breakpoint(medium) {
     height: 600px;
     .logo {
       height: 73px;
@@ -167,7 +168,7 @@ body {
 
 .top-of-page {
   margin-top: 80px;
-  @include breakpoint(medium) { 
+  @include breakpoint(medium) {
     margin-top: 112px;
   }
 }
@@ -201,21 +202,21 @@ body {
   text-align: center;
   height: 240px;
   opacity: 1;
-  @include breakpoint(small) { 
+  @include breakpoint(small) {
     height: 380px;
   }
   &:nth-child(even) {
-    @include breakpoint(large) { 
+    @include breakpoint(large) {
       // height: 240px;
     }
   }
   &:nth-child(odd) {
-    @include breakpoint(large) { 
+    @include breakpoint(large) {
       // height: 380px;
     }
   }
   &:nth-child(5) {
-    @include breakpoint(large) { 
+    @include breakpoint(large) {
       // margin-top: -140px;
     }
   }
@@ -241,7 +242,7 @@ body {
         h4 {
           display: block;
         }
-      } 
+      }
     }
     height: 100%;
   }
@@ -361,7 +362,7 @@ lg-piece {
 
 p {
   font-family: Quicksand;
-  font-weight: 400;  
+  font-weight: 400;
   color: #27223B;
   font-size: 16px;
   line-height: 20px;
@@ -376,7 +377,7 @@ h2 {
 }
 
 h3 {
-  font-family: Quicksand;
+  font-family: Cursive;
   font-weight: 700;
   font-size: 24px; /* ems? */
   color: #27223B;
@@ -470,4 +471,53 @@ copyright {
   font-size: 14px;
   color: #27223B;
   line-height: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 20px;
+  font-size: 15px;
+}
+.slideshow {
+}
+.slides {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.slide {
+  display: none;
+}
+.slide.slide--active {
+  display: block;
+}
+.controls {
+}
+.toggle {
+  background: green;
+  color: white;
+  display: block;
+}
+.toggle-prev {
+  left: 0;
+}
+.toggle--next {
+  right: 0;
+}
+.pagination {
+  margin: 20px;
+  text-align: center;
+}
+.pager {
+  background-color: green;
+  display: inline-block;
+  height: 20px;
+  margin: 10px;
+  overflow: hidden;
+  text-indent: -9000px;
+  white-space: nowrap;
+  width: 20px;
 }

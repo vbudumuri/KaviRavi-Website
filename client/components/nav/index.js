@@ -7,10 +7,6 @@ export default class Nav extends Component {
     super(props, ...args);
   }
 
-  openMenu() {
-    this.props.onOpen();
-  }
-
   componentDidMount() {
     if(screen.width > 768) {
       this.props.onOpen('desktop');
@@ -19,25 +15,25 @@ export default class Nav extends Component {
 
 
   render() {
-    const isOpen = this.props.isOpen ? 'is-active' : null;
-    
+
     return (
-      <div className={`col-xs-12 col-sm-6 off-sm-6 nav-outer ${isOpen}`}>
-        <button className={ `hamburger hamburger--spring ${isOpen}` } type="button" onClick={ (evt) => this.openMenu(evt) }>
-          <span className="hamburger-box">
-            <span className="hamburger-inner"></span>
-          </span>
-        </button>  
-        <section className={`row ${ this.props.isOpen ? 'opened' : null}`}>
-          <div className='col-xs-12 col-sm-4'>
-            <Link to="/">Portfolio</Link>
-          </div> 
-          <div className='col-xs-12 col-sm-4'>
-            <Link to="/#about">About</Link>
-          </div> 
-          <div className='col-xs-12 col-sm-4'>
-            <a href={"mailto:info@tiffanysmithdesign.com?subject=Request for contact"}>Contact</a>
-          </div> 
+      <div className="nav-outer">
+        <section style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
+          <div>
+            <Link to="/#about">About Us</Link>
+          </div>
+          <div>
+            <Link to="/#journey">Journey</Link>
+          </div>
+          <div>
+            <Link to="/#photos">Photos</Link>
+          </div>
+          <div>
+            <Link to="/#bigday">The Big Day</Link>
+          </div>
+          <div>
+            <Link to="/#comments">Comments</Link>
+          </div>
         </section>
       </div>
     );
