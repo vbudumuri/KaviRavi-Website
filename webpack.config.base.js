@@ -19,16 +19,16 @@ module.exports = {
 
   entry: [
     'babel-polyfill',
-    './client/main.jsx'
+    './client/main.js'
   ],
 
   output: {
     path: path.join(process.cwd(), '/client'),
     pathInfo: true,
     publicPath: 'http://localhost:3000/client/',
-    filename: 'main.js'
+    filename: 'bundle.js'
   },
-
+  devtool: 'source-map',
   resolve: {
     root: path.join(__dirname, ''),
     modulesDirectories: [
@@ -52,7 +52,11 @@ module.exports = {
   module: {
     loaders: [
       {test: /\.scss$/, loader: 'style!css!autoprefixer?browsers=last 2 version!sass?outputStyle=expanded'},
-      {test: /\.json$/, loader: 'json-loader'}
+      {test: /\.json$/, loader: 'json-loader'},
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      }
     ],
 
     noParse: /\.min\.js/
