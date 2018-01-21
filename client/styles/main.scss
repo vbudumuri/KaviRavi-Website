@@ -18,13 +18,13 @@
 }
 @mixin breakpoint($point) {
   @if $point == large {
-    @media (min-width: 75em) { @content; }
+    @media (min-width: 50em) { @content; }
   }
   @else if $point == medium {
     @media (min-width: 0em) { @content; }
   }
   @else if $point == small {
-    @media (min-width: 30em)  { @content; }
+    @media (min-width: 37.5em)  { @content; }
   }
 }
 
@@ -161,6 +161,13 @@ body {
     .logo {
       height: 73px;
     }
+  }
+}
+.header-image {
+  margin-top:160px;
+
+  @include breakpoint(small) {
+    margin-top:112px
   }
 }
 

@@ -12,6 +12,9 @@ import { Fade } from 'react-slideshow-image';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
+import 'react-sticky-header/styles.css';
+import StickyHeader from 'react-sticky-header';
+
 export default class IndexComponent extends Component {
   constructor(props, ...args) {
     super(props, ...args);
@@ -78,13 +81,19 @@ export default class IndexComponent extends Component {
     return (
       <div>
         <section>
-          <Hero className='detail-hero'>
-            <Nav onOpen={ this.onOpen.bind(this) }/>
-          </Hero>
+         <StickyHeader
+            header={
+              <Hero className='detail-hero'>
+                <Nav onOpen={ this.onOpen.bind(this) }/>
+              </Hero>
+            }
+          >
+              <div className='header-image'>
+                <img src={'client/images/raja40.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />
+              </div>
+          </StickyHeader>
         </section>
-        <div>
-            <img src={'client/images/raja40.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />
-        </div>
+       
         <div className='bottom-section' id='about'>
           <section className='container'>
             <div className='row' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -132,6 +141,7 @@ export default class IndexComponent extends Component {
             <div className='row' style={{ justifyContent: 'center' }}>
                 <h3 >Comments</h3>
             </div>
+            <div className="fb-comments" data-href="http://localhost:3000" data-numposts="5"></div>
           </section>
           <VerticalTimeline>
               <VerticalTimelineElement
