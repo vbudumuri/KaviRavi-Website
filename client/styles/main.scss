@@ -511,8 +511,8 @@ copyright {
 }
 
 .photo-slider {
-  @include breakpoint(small){
+
+  @include breakpoint(small) {
     width: 60%;
-    height: 50%;
   }
 }

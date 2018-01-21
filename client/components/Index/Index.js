@@ -156,19 +156,18 @@ export default class IndexComponent extends Component {
 
 
 
-        <div className='bottom-section' id='photos' style={{  display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+        <div className='bottom-section' id='photos' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
           <section className='container'>
             <div className='row' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
-              <h3> Pictures</h3>
+              <h3>Pictures</h3>
             </div>
           </section>
           <div className='photo-slider'>
-          <Fade
-            images={images}
-            duration="5000"
-            transitionDuration="1000"
-          />
-
+            <Fade
+              images={images}
+              duration="5000"
+              transitionDuration="1000"
+            />
           </div>
         </div>
 
