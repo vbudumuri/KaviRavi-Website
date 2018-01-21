@@ -397,7 +397,6 @@ h4 {
   font-family: Quicksand;
   font-weight: 700;
   font-size: 20px;  /* ems? */
-  color: #FFFFFF;
   &.breadcrumbs {
     color: #27223B;
   }
@@ -490,7 +489,7 @@ copyright {
     align-items: center;
     justify-content: center;
     @include breakpoint(large) {
-       width: 100%;
+       width: 70%;
     }
     width: 100%;
     border: 1px solid rgb(255, 187, 134);
@@ -498,7 +497,7 @@ copyright {
     .container {
         padding: 20px 15px;
     };
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .image-style {
@@ -525,4 +524,24 @@ copyright {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.journeyImage {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.vertical-timeline-element-date {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    font-weight: bold !important;
+    font-style: italic;
+}
+
+.vertical-timeline-element-icon {
+    background: #fff !important;
+}
+
+.vertical-timeline-element {
+    margin: 0 0 0.5em 0 !important;
 }

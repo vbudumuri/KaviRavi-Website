@@ -118,34 +118,90 @@ export default class IndexComponent extends Component {
           <section className='container'>
             <div className='row' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               <h3 >Our Journey</h3>
-              <div className="card">
+              <div className="card" style={{ backgroundColor: 'turquoise' }}>
                 <div className="container" style={{ display: 'flex', flexDirection: 'column' }}>
                   <VerticalTimeline>
                     <VerticalTimelineElement
                       className="vertical-timeline-element--work"
-                      date="2011 - present"
+                      date="Oct 2014"
                       iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                      icon={''}
+                      icon={<img src={'client/images/firstmet.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />}
                       position={'right'}
                     >
-                      <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                      <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-                      <img src={'client/images/raja40.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />
+                      <div>
+                      <h3 className="vertical-timeline-element-title">First Met</h3>
+                      <h4 className="vertical-timeline-element-subtitle">A Mountain</h4>
+                      <img src={'client/images/raja40.jpg'} className="journeyImage" />
+                      </div>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                       className="vertical-timeline-element--work"
-                      date="2010 - 2011"
+                      date="Jan 2015"
                       iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                      icon={''}
+                      icon={<img src={'client/images/happynewyear.png'} style={{ maxHeight: '100%', maxWidth: '100%' }} />}
                       position={'left'}
                     >
-                      <h3 className="vertical-timeline-element-title">Art Director</h3>
-                      <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                      <p>
-                        Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-                      </p>
+                      <h3 className="vertical-timeline-element-title">First new year together</h3>
+                      <h4 className="vertical-timeline-element-subtitle">where it all started!!</h4>
+                      <img src={'client/images/raja40.jpg'} className="journeyImage" />
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                      className="vertical-timeline-element--work"
+                      date="Jul 2015"
+                      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                      icon={<img src={'client/images/proposal.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />}
+                      position={'right'}
+                    >
+                      <h3 className="vertical-timeline-element-title">The Proposal</h3>
+                      <h4 className="vertical-timeline-element-subtitle">Griffith Observatory</h4>
+                      <img src={'client/images/raja40.jpg'} className="journeyImage" />
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                      className="vertical-timeline-element--work"
+                      date="May 2016"
+                      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                      icon={<img src={'client/images/grad.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />}
+                      position={'left'}
+                    >
+                      <h3 className="vertical-timeline-element-title">Graduated together</h3>
+                      <h4 className="vertical-timeline-element-subtitle">Arizona State University</h4>
+                      <img src={'client/images/raja40.jpg'} className="journeyImage" />
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                      className="vertical-timeline-element--work"
+                      date="May 2016"
+                      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                      icon={<img src={'client/images/date.png'} style={{ maxHeight: '100%', maxWidth: '100%' }} />}
+                      position={'right'}
+                    >
+                      <h3 className="vertical-timeline-element-title">Date and Dinners</h3>
+                      <h4 className="vertical-timeline-element-subtitle">Different Pointe of View</h4>
+                      <img src={'client/images/raja40.jpg'} className="journeyImage" />
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                      className="vertical-timeline-element--work"
+                      date="Jan 2017"
+                      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                      icon={<img src={'client/images/family.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />}
+                      position={'left'}
+                    >
+                      <h3 className="vertical-timeline-element-title">All Happies</h3>
+                      <h4 className="vertical-timeline-element-subtitle">Family accepted</h4>
+                      <img src={'client/images/raja40.jpg'} className="journeyImage" />
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                      className="vertical-timeline-element--work"
+                      date="Nov 2017"
+                      iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+                      icon={<img src={'client/images/engaged.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />}
+                      position={'right'}
+                    >
+                      <h3 className="vertical-timeline-element-title">Finally Engaged</h3>
+                      <h4 className="vertical-timeline-element-subtitle">Zion National Park, Utah</h4>
+                      <img src={'client/images/raja40.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />
                     </VerticalTimelineElement>
                   </VerticalTimeline>
+                  <img src={'client/images/marriageIndian.png'} style={{ maxHeight: '300px', maxWidth: '300px' }} />
                   <img src={'client/images/dividingLoveLine.png'} className="image-style" />
                 </div>
               </div>
@@ -162,7 +218,7 @@ export default class IndexComponent extends Component {
               <h3>Pictures</h3>
             </div>
           </section>
-          <div className='card' style={{ width: '90%' }}>
+          <div className='card'>
             <div className='photo-slider'>
             <Fade
               images={images}
@@ -182,7 +238,13 @@ export default class IndexComponent extends Component {
         <div className='bottom-section' id='bigday'>
           <section className='container'>
             <div className='row' style={{  display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
-              <h3 >Big Day</h3>
+              <h3>The Big Day</h3>
+                <div className="card">
+                  <div className="container" style={{ display: 'flex', flexDirection: 'column' }}>
+                    <img src={'client/images/weddingcard.png'} style={{ maxWidth: '100%', maxHeight: '100%' }} />
+                    <img src={'client/images/dividingLoveLine.png'} className="image-style" />
+                  </div>
+                </div>
             </div>
           </section>
         </div>
@@ -193,11 +255,13 @@ export default class IndexComponent extends Component {
           <section className='container'>
             <div className='row' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
               <h3>Comments</h3>
-              <div className="fb-comments" data-href="http://localhost:3000" data-numposts="5"></div>
             </div>
           </section>
-
         </div>
+
+        <center>
+            <div className="fb-comments" data-href="http://localhost:3000" data-numposts="5"></div>
+        </center>
 
 
       </div>
