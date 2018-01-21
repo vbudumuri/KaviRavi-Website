@@ -70,15 +70,14 @@ body {
 .hero {
   z-index: 10;
   background-color: #fff;
-  height: 340px;
+  min-height: 340px;
   &.detail-hero {
-    height: 80px;
+    min-height: 80px;
     top: 0;
     left: 0;
-    position: fixed;
     width: 100%;
     @include breakpoint(medium) {
-      height: 112px;
+      min-height: 112px;
       background-color: #fff;
     }
   }
@@ -93,7 +92,6 @@ body {
     padding-top: 0px;
     transition: 0.4s all linear;
     background-color: transparent;
-    position: fixed;
     width: 100%;
     padding-top: 75px;
     color: #fff;
@@ -159,7 +157,7 @@ body {
     }
   }
   @include breakpoint(medium) {
-    height: 600px;
+    min-height: 600px;
     .logo {
       height: 73px;
     }

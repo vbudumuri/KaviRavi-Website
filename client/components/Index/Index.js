@@ -77,7 +77,7 @@ export default class IndexComponent extends Component {
 
     return (
       <div>
-        <section style={{ marginBottom: 120 }}>
+        <section>
           <Hero className='detail-hero'>
             <Nav onOpen={ this.onOpen.bind(this) }/>
           </Hero>
