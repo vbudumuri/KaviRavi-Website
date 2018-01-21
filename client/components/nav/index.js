@@ -18,6 +18,8 @@ export default class Nav extends Component {
 
     return (
       <div className="nav-outer">
+        <img src={'client/images/elephantReverse.jpg'} style={{ marginTop: '-30px', width: '100px', marginBottom: '-40px' }} />
+        <img src={'client/images/elephant.jpg'} style={{ marginTop: '-30px', width: '100px', marginBottom: '-40px', float: 'right' }} />
         <section style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
           <div>
             <Link to="/#about">About Us</Link>
