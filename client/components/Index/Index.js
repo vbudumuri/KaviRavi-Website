@@ -162,12 +162,18 @@ export default class IndexComponent extends Component {
               <h3>Pictures</h3>
             </div>
           </section>
-          <div className='photo-slider'>
+          <div className='card' style={{ width: '90%' }}>
+            <div className='photo-slider'>
             <Fade
               images={images}
               duration="5000"
               transitionDuration="1000"
             />
+            <div className='divider-wrapper'>
+             <img src={'client/images/dividingLoveLine.png'} className="image-style" />
+            </div>
+            </div>
+
           </div>
         </div>
 
