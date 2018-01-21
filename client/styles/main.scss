@@ -72,13 +72,12 @@ body {
   background-color: #fff;
   min-height: 340px;
   &.detail-hero {
-    min-height: 80px;
+    min-height: 40px;
     top: 0;
     left: 0;
     width: 100%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     @include breakpoint(medium) {
-      min-height: 112px;
       background-color: #fff;
     }
   }
@@ -104,13 +103,10 @@ body {
     }
     @include breakpoint(medium) {
       background-color: transparent;
-      padding-top: 20px;
+      padding-top: 10px;
     }
     div {
-      padding: $pad*1.2;
-      @include breakpoint(medium) {
-        padding: $pad;
-      }
+      padding: 10px;
       a {
         font-family: Quicksand;
         font-weight: 400;
