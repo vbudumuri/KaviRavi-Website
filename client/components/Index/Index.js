@@ -87,11 +87,15 @@ export default class IndexComponent extends Component {
         </div>
         <div className='bottom-section' id='about'>
           <section className='container'>
-            <div className='row' style={{ justifyContent: 'center' }}>
+            <div className='row' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <h3 >About Us</h3>
+                <div className="card">
+                    <div className="container">
+                        {DummyText()}
+                    </div>
+                </div>
             </div>
 
-            <div style={{ justifyContent: 'center' }}>{DummyText()}</div>
           </section>
         </div>
         <div className='bottom-section' id='journey'>
@@ -138,9 +142,7 @@ export default class IndexComponent extends Component {
               >
                 <h3 className="vertical-timeline-element-title">Creative Director</h3>
                 <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-                <p>
-                  Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-                </p>
+                <img src={'client/images/raja40.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />
               </VerticalTimelineElement>
               <VerticalTimelineElement
                 className="vertical-timeline-element--work"
