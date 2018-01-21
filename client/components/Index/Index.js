@@ -90,8 +90,9 @@ export default class IndexComponent extends Component {
             <div className='row' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <h3 >About Us</h3>
                 <div className="card">
-                    <div className="container">
-                        {DummyText()}
+                    <div className="container" style={{ display: 'flex', flexDirection: 'column' }}>
+                        <div>{DummyText()}</div>
+                        <img src={'client/images/dividingLoveLine.png'} className="image-style" />
                     </div>
                 </div>
             </div>
