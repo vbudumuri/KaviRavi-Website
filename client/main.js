@@ -6,10 +6,10 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, IndexRoute, Route, Link, browserHistory, applyRouterMiddleware } from 'react-router';
 import { useScroll } from 'react-router-scroll';
-import Index from 'components/Index/';
-import Detail from 'components/detail/';
-import Contact from 'components/contact/';
-import About from 'components/about/';
+import Index from './components/Index/index.js';
+import Detail from './components/detail/index.js';
+import Contact from './components/contact/index.js';
+import About from './components/about/index.js';
 
 require('smoothscroll-polyfill').polyfill();
 
