@@ -102,7 +102,11 @@ export default class IndexComponent extends Component {
               <h3 >About Us</h3>
               <div className="card">
                 <div className="container" style={{ display: 'flex', flexDirection: 'column' }}>
-                  <div>{DummyText()}</div>
+                  <div style={{
+                    fontSize: '20px',
+                    fontFamily: 'cursive',
+                    textAlign: 'justify'
+                  }}>{DummyText()}</div>
                   <img src={'client/images/dividingLoveLine.png'} className="image-style" />
                 </div>
               </div>
@@ -129,9 +133,9 @@ export default class IndexComponent extends Component {
                       position={'right'}
                     >
                       <div>
-                      <h3 className="vertical-timeline-element-title">First Met</h3>
-                      <h4 className="vertical-timeline-element-subtitle">A Mountain</h4>
-                      <img src={'client/images/raja40.jpg'} className="journeyImage" />
+                        <h3 className="vertical-timeline-element-title">First Met</h3>
+                        <h4 className="vertical-timeline-element-subtitle">A Mountain</h4>
+                        <img src={'client/images/timeline/a_mountain.jpg'} className="journeyImage" />
                       </div>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -143,7 +147,7 @@ export default class IndexComponent extends Component {
                     >
                       <h3 className="vertical-timeline-element-title">First new year together</h3>
                       <h4 className="vertical-timeline-element-subtitle">where it all started!!</h4>
-                      <img src={'client/images/raja40.jpg'} className="journeyImage" />
+                      <img src={'client/images/timeline/newyear2015.jpg'} className="journeyImage" />
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                       className="vertical-timeline-element--work"
@@ -154,7 +158,7 @@ export default class IndexComponent extends Component {
                     >
                       <h3 className="vertical-timeline-element-title">The Proposal</h3>
                       <h4 className="vertical-timeline-element-subtitle">Griffith Observatory</h4>
-                      <img src={'client/images/raja40.jpg'} className="journeyImage" />
+                      <img src={'client/images/timeline/griffith.jpg'} className="journeyImage" />
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                       className="vertical-timeline-element--work"
@@ -165,7 +169,7 @@ export default class IndexComponent extends Component {
                     >
                       <h3 className="vertical-timeline-element-title">Graduated together</h3>
                       <h4 className="vertical-timeline-element-subtitle">Arizona State University</h4>
-                      <img src={'client/images/raja40.jpg'} className="journeyImage" />
+                      <img src={'client/images/timeline/graduated.jpg'} className="journeyImage" />
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                       className="vertical-timeline-element--work"
@@ -176,7 +180,7 @@ export default class IndexComponent extends Component {
                     >
                       <h3 className="vertical-timeline-element-title">Date and Dinners</h3>
                       <h4 className="vertical-timeline-element-subtitle">Different Pointe of View</h4>
-                      <img src={'client/images/raja40.jpg'} className="journeyImage" />
+                      <img src={'client/images/timeline/date.jpg'} className="journeyImage" />
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                       className="vertical-timeline-element--work"
@@ -198,7 +202,7 @@ export default class IndexComponent extends Component {
                     >
                       <h3 className="vertical-timeline-element-title">Finally Engaged</h3>
                       <h4 className="vertical-timeline-element-subtitle">Zion National Park, Utah</h4>
-                      <img src={'client/images/raja40.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />
+                      <img src={'client/images/timeline/engaged.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />
                     </VerticalTimelineElement>
                   </VerticalTimeline>
                   <img src={'client/images/marriageIndian.png'} style={{ maxHeight: '300px', maxWidth: '300px' }} />
@@ -220,14 +224,14 @@ export default class IndexComponent extends Component {
           </section>
           <div className='card'>
             <div className='photo-slider'>
-            <Fade
-              images={images}
-              duration="5000"
-              transitionDuration="1000"
-            />
-            <div className='divider-wrapper'>
-             <img src={'client/images/dividingLoveLine.png'} className="image-style" />
-            </div>
+              <Fade
+                images={images}
+                duration="5000"
+                transitionDuration="1000"
+              />
+              <div className='divider-wrapper'>
+                <img src={'client/images/dividingLoveLine.png'} className="image-style" />
+              </div>
             </div>
 
           </div>
@@ -237,14 +241,14 @@ export default class IndexComponent extends Component {
 
         <div className='bottom-section' id='bigday'>
           <section className='container'>
-            <div className='row' style={{  display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+            <div className='row' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
               <h3>The Big Day</h3>
-                <div className="card">
-                  <div className="container" style={{ display: 'flex', flexDirection: 'column' }}>
-                    <img src={'client/images/weddingcard.png'} style={{ maxWidth: '100%', maxHeight: '100%' }} />
-                    <img src={'client/images/dividingLoveLine.png'} className="image-style" />
-                  </div>
+              <div className="card">
+                <div className="container" style={{ display: 'flex', flexDirection: 'column' }}>
+                  <img src={'client/images/weddingcard.png'} style={{ maxWidth: '100%', maxHeight: '100%' }} />
+                  <img src={'client/images/dividingLoveLine.png'} className="image-style" />
                 </div>
+              </div>
             </div>
           </section>
         </div>
@@ -260,7 +264,7 @@ export default class IndexComponent extends Component {
         </div>
 
         <center>
-            <div className="fb-comments" data-href="http://localhost:3000" data-numposts="5"></div>
+          <div className="fb-comments" data-href="http://www.kaviravi.me" data-numposts="5"></div>
         </center>
 
 
