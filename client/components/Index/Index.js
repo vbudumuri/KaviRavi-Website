@@ -75,7 +75,11 @@ export default class IndexComponent extends Component {
     const images = [
       'client/images/raja40.jpg',
       'client/images/raja43.jpg',
-      'client/images/raja28.jpg'
+      'client/images/raja28.jpg',
+      'client/images/slides/drone3.jpg',
+      'client/images/slides/drone4.jpg',
+      'client/images/slides/slide1.jpg',
+      'client/images/slides/slide2.jpg',
     ];
 
     return (
@@ -89,7 +93,7 @@ export default class IndexComponent extends Component {
             }
           >
             <div className='header-image'>
-              <img src={'client/images/raja40.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />
+              <img src={'client/images/raja28.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />
             </div>
           </StickyHeader>
         </section>
@@ -122,7 +126,7 @@ export default class IndexComponent extends Component {
           <section className='container'>
             <div className='row' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               <h3 >Our Journey</h3>
-              <div className="card" style={{ backgroundColor: 'turquoise' }}>
+              <div className="card" style={{ backgroundColor: '#e0405e' }}>
                 <div className="container" style={{ display: 'flex', flexDirection: 'column' }}>
                   <VerticalTimeline>
                     <VerticalTimelineElement
@@ -134,7 +138,7 @@ export default class IndexComponent extends Component {
                     >
                       <div>
                         <h3 className="vertical-timeline-element-title">First Met</h3>
-                        <h4 className="vertical-timeline-element-subtitle">A Mountain</h4>
+                        <h4 className="vertical-timeline-element-subtitle">'A' Mountain</h4>
                         <img src={'client/images/timeline/a_mountain.jpg'} className="journeyImage" />
                       </div>
                     </VerticalTimelineElement>
@@ -146,7 +150,7 @@ export default class IndexComponent extends Component {
                       position={'left'}
                     >
                       <h3 className="vertical-timeline-element-title">First new year together</h3>
-                      <h4 className="vertical-timeline-element-subtitle">where it all started!!</h4>
+                      <h4 className="vertical-timeline-element-subtitle">2015 - Where it all started!!</h4>
                       <img src={'client/images/timeline/newyear2015.jpg'} className="journeyImage" />
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -157,7 +161,7 @@ export default class IndexComponent extends Component {
                       position={'right'}
                     >
                       <h3 className="vertical-timeline-element-title">The Proposal</h3>
-                      <h4 className="vertical-timeline-element-subtitle">Griffith Observatory</h4>
+                      <h4 className="vertical-timeline-element-subtitle">Griffith Observatory, LA</h4>
                       <img src={'client/images/timeline/griffith.jpg'} className="journeyImage" />
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -168,7 +172,7 @@ export default class IndexComponent extends Component {
                       position={'left'}
                     >
                       <h3 className="vertical-timeline-element-title">Graduated together</h3>
-                      <h4 className="vertical-timeline-element-subtitle">Arizona State University</h4>
+                      <h4 className="vertical-timeline-element-subtitle">Class of 2016, Arizona State University,</h4>
                       <img src={'client/images/timeline/graduated.jpg'} className="journeyImage" />
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -201,7 +205,7 @@ export default class IndexComponent extends Component {
                       position={'right'}
                     >
                       <h3 className="vertical-timeline-element-title">Finally Engaged</h3>
-                      <h4 className="vertical-timeline-element-subtitle">Zion National Park, Utah</h4>
+                      <h4 className="vertical-timeline-element-subtitle">Angels Landing, Zion National Park, Utah</h4>
                       <img src={'client/images/timeline/engaged.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />
                     </VerticalTimelineElement>
                   </VerticalTimeline>
