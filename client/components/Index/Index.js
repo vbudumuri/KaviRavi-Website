@@ -219,26 +219,22 @@ export default class IndexComponent extends Component {
 
 
 
-
-        <div className='bottom-section' id='photos' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+      <div className='bottom-section-slider' id='photos'>
           <section className='container'>
             <div className='row' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
               <h3>Pictures</h3>
             </div>
           </section>
-          <div className='card'>
-            <div className='photo-slider'>
+          <div className='bottom-sub-slider'>
               <Fade
                 images={images}
-                duration="5000"
+                duration="8000"
                 transitionDuration="1000"
               />
+          </div>
               <div className='divider-wrapper'>
                 <img src={'client/images/dividingLoveLine.png'} className="image-style" />
               </div>
-            </div>
-
-          </div>
         </div>
 
 

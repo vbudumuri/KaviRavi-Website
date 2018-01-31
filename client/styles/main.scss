@@ -512,7 +512,7 @@ copyright {
 .photo-slider {
 
   @include breakpoint(small) {
-    width: 60%;
+    width: 100%;
   }
 }
 
@@ -540,4 +540,32 @@ copyright {
 
 .vertical-timeline-element {
     margin: 0 0 0.5em 0 !important;
+}
+
+.fade-wrapper {
+    .images-wrap {
+        div {
+            @media (min-width: 800px) {
+              width: 60% !important;
+            }
+            width: 100% !important;
+        }
+    }
+}
+
+.bottom-section-slider {
+  background-color: rgb(255, 255, 255);
+  @media (max-width: 800px) {
+      padding: 0px;
+  }
+  padding: 30px 50px;
+  color: $purple;
+  align-items: 'center';
+  margin: auto;
+  .bottom-sub-slider {
+      margin: auto;
+      @media (min-width: 800px) {
+        width: 65%;
+      }
+  }
 }
