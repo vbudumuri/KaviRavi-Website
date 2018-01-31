@@ -73,13 +73,18 @@ export default class IndexComponent extends Component {
     });
 
     const images = [
-      'client/images/raja40.jpg',
-      'client/images/raja43.jpg',
-      'client/images/raja28.jpg',
-      'client/images/slides/drone3.jpg',
-      'client/images/slides/drone4.jpg',
+      'client/images/slides/drone2.jpg',
+      'client/images/slides/drone1.jpg',
       'client/images/slides/slide1.jpg',
       'client/images/slides/slide2.jpg',
+      'client/images/slides/slide5.jpg',
+      'client/images/slides/slide6.jpg',
+      'client/images/slides/slide9.jpg',
+      'client/images/slides/slide15.jpg',
+      'client/images/slides/slide17.jpg',
+      'client/images/slides/slide20.jpg',
+      'client/images/slides/slide21.jpg',
+      'client/images/slides/slide23.jpg',
     ];
 
     return (
@@ -228,7 +233,7 @@ export default class IndexComponent extends Component {
           <div className='bottom-sub-slider'>
               <Fade
                 images={images}
-                duration="8000"
+                duration="10000"
                 transitionDuration="1000"
               />
           </div>
