@@ -84,6 +84,7 @@ export default class IndexComponent extends Component {
       'client/images/slides/slide20.jpg',
       'client/images/slides/slide21.jpg',
       'client/images/slides/slide23.jpg',
+      'client/images/slides/solduc.jpg',
     ];
 
     return (
@@ -232,8 +233,8 @@ export default class IndexComponent extends Component {
           <div className='bottom-sub-slider'>
               <Fade
                 images={images}
-                duration="10000"
-                transitionDuration="1000"
+                duration="8000"
+                transitionDuration="200"
               />
           </div>
               <div className='divider-wrapper'>
