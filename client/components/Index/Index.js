@@ -73,18 +73,20 @@ export default class IndexComponent extends Component {
     });
 
     const images = [
-      'client/images/slides/drone2.jpg',
       'client/images/slides/drone1.jpg',
-      'client/images/slides/slideA.jpg',
       'client/images/slides/slideB.jpg',
       'client/images/slides/slide6.jpg',
+      'client/images/slides/drone2.jpg',
       'client/images/slides/slide9.jpg',
       'client/images/slides/slide15.jpg',
+      'client/images/slides/slideA.jpg',
       'client/images/slides/slide17.jpg',
-      'client/images/slides/slide20.jpg',
       'client/images/slides/slide21.jpg',
       'client/images/slides/slide23.jpg',
       'client/images/slides/solduc.jpg',
+      'client/images/slides/sailboat.jpg',
+      'client/images/slides/cycle.jpg',
+      'client/images/slides/newyork.jpg',
     ];
 
     return (
