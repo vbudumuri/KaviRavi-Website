@@ -77,7 +77,6 @@ export default class IndexComponent extends Component {
       'client/images/slides/drone1.jpg',
       'client/images/slides/slide1.jpg',
       'client/images/slides/slide2.jpg',
-      'client/images/slides/slide5.jpg',
       'client/images/slides/slide6.jpg',
       'client/images/slides/slide9.jpg',
       'client/images/slides/slide15.jpg',
@@ -200,7 +199,7 @@ export default class IndexComponent extends Component {
                     >
                       <h3 className="vertical-timeline-element-title">All Happies</h3>
                       <h4 className="vertical-timeline-element-subtitle">Family accepted</h4>
-                      <img src={'client/images/raja40.jpg'} className="journeyImage" />
+                      <img src={'client/images/slide5.jpg'} className="journeyImage" />
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                       className="vertical-timeline-element--work"
