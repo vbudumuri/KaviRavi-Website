@@ -233,7 +233,7 @@ export default class IndexComponent extends Component {
               <Fade
                 images={images}
                 duration="10000"
-                transitionDuration="1000"
+                transitionDuration="500"
               />
           </div>
               <div className='divider-wrapper'>
