@@ -75,8 +75,8 @@ export default class IndexComponent extends Component {
     const images = [
       'client/images/slides/drone2.jpg',
       'client/images/slides/drone1.jpg',
-      'client/images/slides/slide1.jpg',
-      'client/images/slides/slide2.jpg',
+      'client/images/slides/slideA.jpg',
+      'client/images/slides/slideB.jpg',
       'client/images/slides/slide6.jpg',
       'client/images/slides/slide9.jpg',
       'client/images/slides/slide15.jpg',
@@ -177,7 +177,7 @@ export default class IndexComponent extends Component {
                     >
                       <h3 className="vertical-timeline-element-title">Graduated together</h3>
                       <h4 className="vertical-timeline-element-subtitle">Class of 2016, Arizona State University,</h4>
-                      <img src={'client/images/timeline/graduated.jpg'} className="journeyImage" />
+                      <img src={'client/images/timeline/graduated1.jpg'} className="journeyImage" />
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                       className="vertical-timeline-element--work"
@@ -210,7 +210,7 @@ export default class IndexComponent extends Component {
                     >
                       <h3 className="vertical-timeline-element-title">Finally Engaged</h3>
                       <h4 className="vertical-timeline-element-subtitle">Angels Landing, Zion National Park, Utah</h4>
-                      <img src={'client/images/timeline/engaged.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />
+                      <img src={'client/images/timeline/engaged1.jpg'} style={{ maxHeight: '100%', maxWidth: '100%' }} />
                     </VerticalTimelineElement>
                   </VerticalTimeline>
                   <img src={'client/images/marriageIndian.png'} style={{ maxHeight: '300px', maxWidth: '300px' }} />
