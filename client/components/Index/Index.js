@@ -87,6 +87,7 @@ export default class IndexComponent extends Component {
       'client/images/slides/sailboat.jpg',
       'client/images/slides/cycle.jpg',
       'client/images/slides/newyork.jpg',
+      'client/images/slides/random.jpg',
     ];
 
     return (
