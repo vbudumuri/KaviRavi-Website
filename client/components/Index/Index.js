@@ -80,6 +80,7 @@ export default class IndexComponent extends Component {
       'client/images/slides/slide9.jpg',
       'client/images/slides/slide15.jpg',
       'client/images/slides/slideA.jpg',
+      'client/images/slides/kayak.jpg',
       'client/images/slides/slide17.jpg',
       'client/images/slides/raja43.jpg',
       'client/images/slides/slide21.jpg',
@@ -91,6 +92,8 @@ export default class IndexComponent extends Component {
       'client/images/slides/random.jpg',
       'client/images/slides/whitesands.jpg',
       'client/images/slides/raja40.jpg',
+      'client/images/slides/lift.jpg',
+      'client/images/slides/proposal.jpg',
     ];
 
     return (
