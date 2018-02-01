@@ -81,6 +81,7 @@ export default class IndexComponent extends Component {
       'client/images/slides/slide15.jpg',
       'client/images/slides/slideA.jpg',
       'client/images/slides/slide17.jpg',
+      'client/images/slides/raja43.jpg',
       'client/images/slides/slide21.jpg',
       'client/images/slides/slide23.jpg',
       'client/images/slides/solduc.jpg',
@@ -89,6 +90,7 @@ export default class IndexComponent extends Component {
       'client/images/slides/newyork.jpg',
       'client/images/slides/random.jpg',
       'client/images/slides/whitesands.jpg',
+      'client/images/slides/raja40.jpg',
     ];
 
     return (
@@ -147,7 +149,7 @@ export default class IndexComponent extends Component {
                     >
                       <div>
                         <h3 className="vertical-timeline-element-title">First Met</h3>
-                        <h4 className="vertical-timeline-element-subtitle">'A' Mountain</h4>
+                        <h4 className="vertical-timeline-element-subtitle">'A' Mountain, AZ</h4>
                         <img src={'client/images/timeline/a_mountain.jpg'} className="journeyImage" />
                       </div>
                     </VerticalTimelineElement>
@@ -181,7 +183,7 @@ export default class IndexComponent extends Component {
                       position={'left'}
                     >
                       <h3 className="vertical-timeline-element-title">Graduated together</h3>
-                      <h4 className="vertical-timeline-element-subtitle">Class of 2016, Arizona State University,</h4>
+                      <h4 className="vertical-timeline-element-subtitle">Class of 2016, Arizona State University</h4>
                       <img src={'client/images/timeline/graduated1.jpg'} className="journeyImage" />
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -192,7 +194,7 @@ export default class IndexComponent extends Component {
                       position={'right'}
                     >
                       <h3 className="vertical-timeline-element-title">Date and Dinners</h3>
-                      <h4 className="vertical-timeline-element-subtitle">Different Pointe of View</h4>
+                      <h4 className="vertical-timeline-element-subtitle">Different Pointe of View, AZ</h4>
                       <img src={'client/images/timeline/date.jpg'} className="journeyImage" />
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -203,7 +205,7 @@ export default class IndexComponent extends Component {
                       position={'left'}
                     >
                       <h3 className="vertical-timeline-element-title">All Happies</h3>
-                      <h4 className="vertical-timeline-element-subtitle">Family accepted</h4>
+                      <h4 className="vertical-timeline-element-subtitle">Family accepted, India</h4>
                       <img src={'client/images/slide5.jpg'} className="journeyImage" />
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -272,10 +274,13 @@ export default class IndexComponent extends Component {
           </section>
         </div>
 
-        <center>
-          <div className="fb-comments" data-href="http://www.kaviravi.me" data-numposts="5"></div>
+        <center style={{ marginBottom: '50px' }}>
+          <div className="fb-comments" data-width="700" data-href="http://www.kaviravi.me" data-numposts="5"></div>
         </center>
 
+        <div className="container" style={{ display: 'flex', flexDirection: 'column' }}>
+            <img src={'client/images/dividingLoveLine.png'} className="image-style" />
+        </div>
 
       </div>
     );
